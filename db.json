@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "name": "Cheeseburger",
+      "image": "/images/cheese.jpg",
+      "desc": "A hamburger topped with cheese placed on top of the meat patty",
+      "price": 110,
+      "id": "001"
+    },
+    {
+      "name": "Chicken burger",
+      "image": "/images/chicken.jpg",
+      "desc": "A chicken sandwich that consists of a toasted wheat bun, a breaded cutlet, shredded lettuce and mayonnaise.",
+      "price": 150,
+      "id": "002"
+    },
+    {
+      "name": "Double hamburger",
+      "image": "/images/double.jpg",
+      "desc": "Double hamburger with 100% meat patty and with cheese, lettuce, tomato, onion, pickles, bacon.",
+      "price": 200,
+      "id": "003"
+    }
+  ]
+}
