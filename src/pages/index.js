@@ -32,7 +32,7 @@ export default function Home() {
           Есть ещё пара-тройка факторов, влияющих на аппетит: цены, качество
           обслуживания, правильная атмосфера заведения.
         </p>
-        <Link href="/burgers" className={styles.btn}>
+        <Link href="/products" className={styles.btn}>
           All burgers
         </Link>
       </div>

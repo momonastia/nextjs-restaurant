@@ -1,5 +1,5 @@
 export const getStaticPaths = async () => {
-  const res = await fetch("http://localhost:3000/items");
+  const res = await fetch("http://localhost:5000/items");
   const data = await res.json();
 
   const paths = data.map((burger) => {
