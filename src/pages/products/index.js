@@ -18,7 +18,7 @@ const Burgers = ({ burgers }) => {
       <div className={styles.burgerCard}>
         {burgers.map((burger) => {
           return (
-            <Link href={`/burgers/${burger.id}`} key={burger.id}>
+            <Link href={`/products/${burger.id}`} key={burger.id}>
               <div>
                 <div className={styles.imageContainer}>
                   <Image
