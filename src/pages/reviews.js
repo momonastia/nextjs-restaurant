@@ -48,7 +48,7 @@ export default Reviews;
       const response = await fetch(
         "https://jsonplaceholder.typicode.com/comments"
       );
-      const data = await response.json();
+      const data = await response.json(); 
       setReviews(data);
     };
     getData();
