@@ -5,9 +5,9 @@ export const getStaticPaths = async () => {
   const res = await fetch("http://localhost:5000/items");
   const data = await res.json();
 
-  const paths = data.map((burger) => {
+  const paths = data.map((pizza) => {
     return {
-      params: { id: burger.id },
+      params: { id: pizza.id },
     };
   });
 
@@ -24,27 +24,27 @@ export const getStaticProps = async (context) => {
   const data = await res.json();
 
   return {
-    props: { burger: data },
+    props: { pizza: data },
   };
 };
 
-const Details = ({ burger }) => {
-  console.log("details burger >>>>", burger);
+const Details = ({ pizza }) => {
+  console.log("details burger >>>>", pizza);
 
   return (
     <div className={styles.singleBurger}>
-      <h1>{burger.name}</h1>
+      <h1>{pizza.name}</h1>
       <div className={styles.imageContainer}>
         <Image
-          src={`${burger.image}`}
-          alt={`${burger.name}`}
+          src={`${pizza.image}`}
+          alt={`${pizza.name}`}
           width="100"
           height="100"
           Layout="responsive"
         ></Image>
       </div>
       <div>
-        <p>{burger.desc}</p>
+        <p>{pizza.desc}</p>
       </div>
     </div>
   );

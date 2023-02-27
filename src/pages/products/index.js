@@ -7,31 +7,31 @@ export const getStaticProps = async () => {
   const data = await res.json();
 
   return {
-    props: { burgers: data },
+    props: { pizzas: data },
   };
 };
 
-const Burgers = ({ burgers }) => {
+const Pizza = ({ pizzas }) => {
   return (
     <div>
-      <h1>Our burgers</h1>
+      <h1>Our pizzas</h1>
       <div className={styles.burgerCard}>
-        {burgers.map((burger) => {
+        {pizzas.map((pizza) => {
           return (
-            <Link href={`/products/${burger.id}`} key={burger.id}>
+            <Link href={`/products/${pizza.id}`} key={pizza.id}>
               <div>
                 <div className={styles.imageContainer}>
                   <Image
-                    src={`${burger.image}`}
-                    alt={`${burger.name}`}
+                    src={`${pizza.image}`}
+                    alt={`${pizza.name}`}
                     width="100"
                     height="100"
                     Layout="responsive"
                   ></Image>
                 </div>
                 <div>
-                  <h3>{burger.name}</h3>
-                  <p>{burger.desc}</p>
+                  <h3>{pizza.name}</h3>
+                  <p>{pizza.desc}</p>
                 </div>
               </div>
             </Link>
@@ -42,4 +42,4 @@ const Burgers = ({ burgers }) => {
   );
 };
 
-export default Burgers;
+export default Pizza;
