@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import Link from "next/link";
-import styles from "@/styles/Home.module.css";
+import styles from "@/styles/Home.module.scss";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,10 +15,11 @@ export default function Home() {
       </Head>
       <div>
         <h1 className={`${styles.title}`}>Home page</h1>
-        <div className={styles.mainImage}>
+        <div className={styles.mainImageContainer}>
           <Image
+            className={styles.mainImage}
             src="https://api.lorem.space/image/pizza?w=400&h=300&hash=8B7BCDC2"
-            alt="fat burger"
+            alt="pizza"
             width={400}
             height={300}
           />

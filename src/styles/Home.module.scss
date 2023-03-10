@@ -16,11 +16,29 @@
   color: #fff;
   text-align: center;
 }
-.mainImage {
+.mainImageContainer {
   max-width: 400px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .mainImage {
+    width: 250px;
+    height: 200px;
+    border-radius: 5px;
+  }
 }
 .container {
   max-width: 600px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .mainImageContainer {
+    .mainImage {
+      width: 400px;
+      height: 300px;
+    }
+  }
 }
