@@ -1,4 +1,4 @@
-import styles from "@/styles/burgers.module.css";
+import styles from "@/styles/pizzas.module.css";
 import Image from "next/image";
 
 export const getStaticPaths = async () => {
@@ -29,10 +29,10 @@ export const getStaticProps = async (context) => {
 };
 
 const Details = ({ pizza }) => {
-  console.log("details burger >>>>", pizza);
+  console.log("details pizza >>>>", pizza);
 
   return (
-    <div className={styles.singleBurger}>
+    <div className={styles.singlePizza}>
       <h1>{pizza.name}</h1>
       <div className={styles.imageContainer}>
         <Image
