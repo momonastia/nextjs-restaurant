@@ -4,4 +4,15 @@
   gap: 2px;
   align-items: flex-start;
   font-size: 0.9rem;
+
+  > * {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+.logo {
+  font-size: 50px;
+  color: #ffc600;
 }

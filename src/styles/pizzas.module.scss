@@ -1,6 +1,7 @@
 .cardsTitle {
   color: #7d7d7d;
   padding-left: 1rem;
+  text-align: center;
 }
 
 .imageContainer {
@@ -50,12 +51,11 @@
 }
 
 @media screen and (min-width: 480px) {
+  .cardsTitle {
+    text-align: left;
+  }
   .cardsContainer {
     max-width: 95%;
     width: 100%;
-
-    .pizzaCard {
-      /* width: 100%; */
-    }
   }
 }

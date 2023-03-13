@@ -26,10 +26,7 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-header svg {
-  font-size: 50px;
-  color: #ffc600;
-}
+
 nav {
   display: flex;
   justify-content: flex-end;
