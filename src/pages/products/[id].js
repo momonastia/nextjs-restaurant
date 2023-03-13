@@ -1,4 +1,4 @@
-import styles from "@/styles/pizzas.module.css";
+import styles from "@/styles/pizzas.module.scss";
 import Image from "next/image";
 
 export const getStaticPaths = async () => {
