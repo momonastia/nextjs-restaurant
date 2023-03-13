@@ -1,25 +1,61 @@
+.cardsTitle {
+  color: #7d7d7d;
+  padding-left: 1rem;
+}
+
 .imageContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 150px;
+  width: 90%;
+  object-fit: cover;
+
+  img {
+    border-radius: 5px;
+  }
 }
-.pizzaCard {
+.cardsContainer {
   color: #2e2e2e;
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   margin-bottom: 20px;
   overflow: hidden;
   background: #fff;
   padding: 10px;
   border-radius: 4px;
   max-width: 500px;
-  box-shadow: rgba(0, 0, 0, 0.043) 0px 0px 5px 3px;
+  /* box-shadow: rgba(0, 0, 0, 0.043) 0px 0px 5px 3px; */
+  h4 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  p {
+    margin-top: 0;
+  }
 }
-.pizzaCard h3 {
-  margin-top: 0;
+
+.pizzaCard {
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  width: 16rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #7d7d7d;
 }
 .singlePizza {
   max-width: 600px;
+}
+
+@media screen and (min-width: 480px) {
+  .cardsContainer {
+    max-width: 95%;
+    width: 100%;
+
+    .pizzaCard {
+      /* width: 100%; */
+    }
+  }
 }

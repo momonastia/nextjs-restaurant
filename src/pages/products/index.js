@@ -14,24 +14,28 @@ export const getStaticProps = async () => {
 const Pizza = ({ pizzas }) => {
   return (
     <div>
-      <h1>Our pizzas</h1>
-      <div className={styles.pizzaCard}>
+      <h1 className={styles.cardsTitle}>Our pizzas</h1>
+      <div className={styles.cardsContainer}>
         {pizzas.map((pizza) => {
           return (
             <Link href={`/products/${pizza.id}`} key={pizza.id}>
-              <div>
+              <div className={styles.pizzaCard}>
                 <div className={styles.imageContainer}>
                   <Image
                     src={`${pizza.image}`}
                     alt={`${pizza.name}`}
-                    width="100"
-                    height="100"
+                    width="250"
+                    height="150"
                     Layout="responsive"
                   ></Image>
                 </div>
-                <div>
-                  <h3>{pizza.name}</h3>
-                  <p>{pizza.desc}</p>
+                <div className={styles.pizzaInfo}>
+                  <h4>{pizza.name}</h4>
+                  <p>
+                    {pizza.desc.length > 50
+                      ? `${pizza.desc.substring(0, 50)}...`
+                      : pizza.desc}{" "}
+                  </p>
                 </div>
               </div>
             </Link>
