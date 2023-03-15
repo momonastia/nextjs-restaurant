@@ -1,8 +1,16 @@
+import Head from "next/head";
+
 const AboutPage = () => {
   return (
-    <div>
-      <h1>About us</h1>
-    </div>
+    <>
+      <Head>
+        <title>Pizza restaurant | About us </title>
+        <meta name="title" content="pizza restaurant" />
+      </Head>
+      <div>
+        <h1>About us</h1>
+      </div>
+    </>
   );
 };
 

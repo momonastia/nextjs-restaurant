@@ -29,7 +29,7 @@
 
   ul {
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .mobile_btn {
@@ -54,26 +54,8 @@
   .container {
     .menu {
       flex-direction: row;
+      right: 0;
+      position: relative;
     }
   }
-}
-
-/* old */
-.NavBar {
-  display: flex;
-  flex-direction: row;
-  gap: 2px;
-  align-items: flex-start;
-  font-size: 0.9rem;
-
-  > * {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-}
-
-.logo {
-  font-size: 50px;
-  color: #ffc600;
 }
