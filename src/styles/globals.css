@@ -13,7 +13,20 @@ a {
   color: #000000;
   text-decoration: none;
   opacity: 1;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
+
+a:hover {
+  color: #ffc600;
+  filter: drop-shadow(0px 0px 15px #ffc600);
+}
+
+a:active {
+  color: #ffc600;
+}
+
 .content {
   max-width: 960px;
   margin: 80px auto;

@@ -6,8 +6,8 @@ const Reviews = ({ reviews }) => {
   return (
     <>
       <Head>
-        <title>Fat burgers | Home page</title>
-        <meta name="title" content="fat burgers" />
+        <title>Pizza restaurant | Reviews </title>
+        <meta name="title" content="pizza restaurant" />
       </Head>
       <div>
         <h1>Client reviews</h1>
