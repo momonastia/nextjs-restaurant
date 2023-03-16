@@ -8,7 +8,7 @@
   .menu {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     gap: 30px;
     position: fixed;
@@ -17,19 +17,24 @@
     bottom: 0;
     z-index: 10;
     background-color: rgb(255, 255, 255);
-    opacity: 0.7;
+    opacity: 0.95;
     height: 100%;
     width: 100%;
     transition: right 1s;
   }
 
   .active {
-    right: -50%;
+    right: -60%;
   }
 
   ul {
     list-style: none;
     font-size: 1.2rem;
+
+    li {
+      margin-top: 80px;
+      margin-bottom: -60px;
+    }
   }
 
   .mobile_btn {
@@ -56,6 +61,10 @@
       flex-direction: row;
       right: 0;
       position: relative;
+
+      li {
+        margin: 0;
+      }
     }
   }
 }
