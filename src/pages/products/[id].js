@@ -38,8 +38,8 @@ const Details = ({ pizza }) => {
         <Image
           src={`${pizza.image}`}
           alt={`${pizza.name}`}
-          width="100"
-          height="100"
+          width="250"
+          height="150"
           Layout="responsive"
         ></Image>
       </div>
