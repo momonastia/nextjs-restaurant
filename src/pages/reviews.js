@@ -1,4 +1,5 @@
 import Head from "next/head";
+import styles from "@/styles/reviews.module.scss";
 
 const Reviews = ({ reviews }) => {
   console.log(reviews);
@@ -11,11 +12,11 @@ const Reviews = ({ reviews }) => {
       </Head>
       <div>
         <h1>Client reviews</h1>
-        <div className="reviews">
+        <div className={styles.reviews}>
           {!!reviews.length &&
             reviews.slice(0, 20).map((res) => {
               return (
-                <div key={res.id} className="review">
+                <div key={res.id} className={styles.reviewItem}>
                   {res.id} {`${res.body.slice(0, 90)}...`}
                 </div>
               );

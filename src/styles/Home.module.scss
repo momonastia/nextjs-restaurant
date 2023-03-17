@@ -1,5 +1,8 @@
 .title {
-  color: rgb(0, 0, 0);
+  position: relative;
+  top: 114px;
+  margin-top: -6rem;
+  color: rgb(255, 255, 255);
   text-align: center;
   font-size: 50px;
 }
@@ -17,15 +20,15 @@
   text-align: center;
 }
 .mainImageContainer {
-  max-width: 400px;
+  max-width: 800px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 
   .mainImage {
-    width: 250px;
-    height: 200px;
+    width: 400px;
+    height: 120px;
     border-radius: 5px;
   }
 }
@@ -37,7 +40,7 @@
 @media screen and (min-width: 480px) {
   .mainImageContainer {
     .mainImage {
-      width: 400px;
+      width: 1000px;
       height: 300px;
     }
   }

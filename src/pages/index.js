@@ -18,9 +18,9 @@ export default function Home() {
         <div className={styles.mainImageContainer}>
           <Image
             className={styles.mainImage}
-            src="https://api.lorem.space/image/pizza?w=400&h=300&hash=8B7BCDC2"
+            src="https://api.lorem.space/image/pizza?w=1000&h=300&hash=8B7BCDC2"
             alt="pizza"
-            width={400}
+            width={1000}
             height={300}
           />
         </div>
