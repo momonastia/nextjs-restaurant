@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="title" content="pizza restaurant" />
       </Head>
       <div>
-        <h1 className={`${styles.title}`}>Home page</h1>
+        <h1 className={`${styles.title}`}>Best pizza</h1>
         <div className={styles.mainImageContainer}>
           <Image
             className={styles.mainImage}
