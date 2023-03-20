@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { CSSTransition } from "react-transition-group";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import Link from "next/link";
@@ -15,13 +16,10 @@ export default function Home() {
         <meta name="title" content="pizza restaurant" />
       </Head>
       <div>
-        <CSSTransition
-          /* in={show} */ className="alert"
-          timeout={300}
-          unmountOnExit
-        >
-          <h1 className={`${styles.title}`}>Best pizza</h1>
-        </CSSTransition>
+        <motion.h1 animate={{ rotate: 360 }} className={`${styles.title}`}>
+          Best pizza{" "}
+        </motion.h1>
+
         <div className={styles.mainImageContainer}>
           <Image
             className={styles.mainImage}
