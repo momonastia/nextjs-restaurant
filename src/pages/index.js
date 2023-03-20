@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { CSSTransition } from "react-transition-group";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import Link from "next/link";
@@ -14,7 +15,13 @@ export default function Home() {
         <meta name="title" content="pizza restaurant" />
       </Head>
       <div>
-        <h1 className={`${styles.title}`}>Best pizza</h1>
+        <CSSTransition
+          /* in={show} */ className="alert"
+          timeout={300}
+          unmountOnExit
+        >
+          <h1 className={`${styles.title}`}>Best pizza</h1>
+        </CSSTransition>
         <div className={styles.mainImageContainer}>
           <Image
             className={styles.mainImage}
