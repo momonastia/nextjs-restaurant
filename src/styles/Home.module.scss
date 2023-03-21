@@ -1,6 +1,7 @@
 .title {
   position: relative;
   top: 8.5rem;
+  /*  transform: translateX(-500px); */
   margin-top: -6rem;
   margin-left: 1.6rem;
   color: rgb(255, 255, 255);
@@ -36,27 +37,6 @@
 .container {
   max-width: 600px;
   margin: 0 auto;
-}
-
-.alert-enter {
-  opacity: 0;
-  transform: scale(0.9);
-}
-
-.alert-enter-active {
-  opacity: 1;
-  transform: translateX(0);
-  transition: opacity 300ms, transform 300ms;
-}
-
-.alert-exit {
-  opacity: 1;
-}
-
-.alert-exit-active {
-  opacity: 0;
-  transform: scale(0.9);
-  transition: opacity 300ms, transform 300ms;
 }
 
 @media screen and (min-width: 480px) {
