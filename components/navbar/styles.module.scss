@@ -7,7 +7,7 @@
   background-color: transparent;
 
   .menu {
-    background-color: transparent;
+    background-color: rgba(116, 116, 116, 0.8);
     color: white;
     display: flex;
     flex-direction: column;
@@ -46,6 +46,7 @@
     top: 20px;
     cursor: pointer;
     z-index: 10;
+    color: #cbcbcb;
   }
 }
 
@@ -63,6 +64,7 @@
       flex-direction: row;
       right: 0;
       position: relative;
+      background-color: transparent;
 
       li {
         margin: 0;

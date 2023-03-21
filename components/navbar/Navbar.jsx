@@ -1,6 +1,4 @@
 import { BiFoodMenu, BiHomeAlt } from "react-icons/bi";
-import { CiPizza } from "react-icons/ci";
-import { slide as Menu } from "react-burger-menu";
 import { MdOutlineRateReview, MdOutlineContactSupport } from "react-icons/md";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
