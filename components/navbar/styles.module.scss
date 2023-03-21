@@ -4,8 +4,11 @@
   display: flex;
   flex-direction: row;
   justify-content: end;
+  background-color: transparent;
 
   .menu {
+    background-color: transparent;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -16,7 +19,6 @@
     margin: 0;
     bottom: 0;
     z-index: 10;
-    background-color: rgb(255, 255, 255);
     opacity: 0.95;
     height: 100%;
     width: 100%;
