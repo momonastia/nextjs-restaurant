@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { CSSTransition } from "react-transition-group";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
@@ -17,22 +16,30 @@ export default function Home() {
       </Head>
       <div>
         <motion.h1
-          initial={{ x: -1000, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.5, ease: "easeOut" }}
+          initial={{ y: +50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ /* delay: 0.5, */ ease: "easeOut", duration: 1 }}
           speed={0.1}
           className={`${styles.title}`}
         >
           Best pizza{" "}
         </motion.h1>
-
+        <motion.p
+          initial={{ y: +50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.5, ease: "easeOut", duration: 1 }}
+          speed={0.1}
+          className={`${styles.titleText}`}
+        >
+          Delicious italian pizza
+        </motion.p>
         <div className={styles.mainImageContainer}>
           <Image
             className={styles.mainImage}
-            src="https://api.lorem.space/image/pizza?w=1000&h=300&hash=8B7BCDC2"
+            src="/../public/images/pizza-3007395.jpg"
             alt="pizza"
             width={1000}
-            height={300}
+            height={500}
           />
         </div>
         <p className={styles.text}>
