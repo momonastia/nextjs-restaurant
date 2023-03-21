@@ -16,7 +16,13 @@ export default function Home() {
         <meta name="title" content="pizza restaurant" />
       </Head>
       <div>
-        <motion.h1 animate={{ rotate: 360 }} className={`${styles.title}`}>
+        <motion.h1
+          initial={{ x: -1000, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.5, ease: "easeOut" }}
+          speed={0.1}
+          className={`${styles.title}`}
+        >
           Best pizza{" "}
         </motion.h1>
 
