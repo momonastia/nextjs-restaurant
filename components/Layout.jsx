@@ -1,10 +1,10 @@
-import Header from "./header/Header";
+import MainHeader from "./mainHeader/MainHeader";
 import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   return (
     <div className="content">
-      <Header />
+      <MainHeader />
       {children}
       <Footer />
     </div>

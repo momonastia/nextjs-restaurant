@@ -3,7 +3,7 @@ import Navbar from "../navbar/Navbar";
 import React from "react";
 import styles from "./styles.module.scss";
 
-const Header = () => {
+const MainHeader = () => {
   return (
     <header>
       <div className={styles.logo}>
@@ -14,4 +14,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default MainHeader;
