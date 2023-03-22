@@ -9,7 +9,7 @@ const NotFoundPage = () => {
     setTimeout(() => {
       router.push("/");
     }, 3000);
-  }, ["router"]);
+  }, [router]);
 
   return (
     <div className="not-found">
