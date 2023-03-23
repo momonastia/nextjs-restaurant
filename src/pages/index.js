@@ -14,7 +14,7 @@ export default function Home() {
         <title>Pizza restaurant | Home page</title>
         <meta name="title" content="pizza restaurant" />
       </Head>
-      <div>
+      <div className={styles.Hero}>
         <motion.h1
           initial={{ y: +50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

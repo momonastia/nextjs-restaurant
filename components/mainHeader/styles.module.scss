@@ -13,6 +13,10 @@
 }
 
 .logo {
-  font-size: 52x;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #ffc600;
+  gap: 1rem;
 }

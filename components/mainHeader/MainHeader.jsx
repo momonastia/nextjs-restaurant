@@ -7,7 +7,7 @@ const MainHeader = () => {
   return (
     <header>
       <div className={styles.logo}>
-        <CiPizza />
+        <CiPizza /> Pizzeria
       </div>
       <Navbar />
     </header>
