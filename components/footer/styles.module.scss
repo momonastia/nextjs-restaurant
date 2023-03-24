@@ -1,0 +1,62 @@
+.FooterMain {
+  display: flex;
+
+  .FooterContacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    flex-grow: 1;
+    width: 33%;
+    border-right: 1px solid gray;
+
+    .logo {
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffc600;
+      gap: 1rem;
+      font-family: "Comforter", cursive;
+    }
+
+    .FooterAdress {
+      width: 70%;
+    }
+  }
+
+  .FooterAbout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    flex-grow: 1;
+    width: 33%;
+    border-right: 1px solid gray;
+
+    h4 {
+      margin: 0;
+    }
+
+    .division {
+      border-bottom: 1px solid gray;
+      color: grey;
+      width: 20%;
+      text-align: center;
+    }
+
+    .FooterAboutText {
+      width: 70%;
+    }
+  }
+
+  .FooterMap {
+    flex-grow: 1;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
