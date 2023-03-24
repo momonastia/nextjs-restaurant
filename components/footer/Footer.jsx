@@ -1,4 +1,7 @@
 import { CiPizza } from "react-icons/ci";
+import { GrFacebookOption } from "react-icons/gr";
+import { AiOutlineYoutube, AiOutlineInstagram } from "react-icons/ai";
+import { RiLinkedinFill } from "react-icons/ri";
 import Image from "next/image";
 import styles from "./styles.module.scss";
 
@@ -10,7 +13,7 @@ const Footer = () => {
           <div className={styles.logo}>
             <CiPizza /> Pizzeria
           </div>
-          <div>Pizzeria LLC</div>
+          <div className={styles.FooterName}>Pizzeria LLC</div>
           <div className={styles.FooterAdress}>
             203 Fake St. Mountain View, San Francisco, California, USA +2 392
             3929 210 info@yourdomain.com
@@ -36,7 +39,12 @@ const Footer = () => {
           />
         </div>
       </div>
-      <div className={styles.FooterSocial}></div>
+      <div className={styles.FooterSocial}>
+        <GrFacebookOption />
+        <AiOutlineInstagram />
+        <AiOutlineYoutube />
+        <RiLinkedinFill />
+      </div>
     </footer>
   );
 };

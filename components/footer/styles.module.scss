@@ -1,5 +1,7 @@
 .FooterMain {
   display: flex;
+  color: grey;
+  font-size: 0.7rem;
 
   .FooterContacts {
     display: flex;
@@ -21,6 +23,10 @@
       font-family: "Comforter", cursive;
     }
 
+    .FooterName {
+      font-size: large;
+    }
+
     .FooterAdress {
       width: 70%;
     }
@@ -37,6 +43,7 @@
     border-right: 1px solid gray;
 
     h4 {
+      font-size: large;
       margin: 0;
     }
 
@@ -58,5 +65,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+.FooterSocial {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffc600;
+  gap: 2rem;
+
+  * {
+    border: 1px solid #ffc600;
+    padding: 0.5rem;
+    border-radius: 50%;
+  }
+
+  *:hover {
+    cursor: pointer;
+    box-shadow: #ffc600;
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 198, 0, 0.81);
+    box-shadow: 0px 0px 10px 5px rgba(255, 198, 0, 0.81);
+    transition: all 0.5s;
   }
 }
