@@ -1,0 +1,38 @@
+.ServicesContainer {
+  background-color: #ffc600;
+  .ServicesTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      width: 50%;
+      text-align: center;
+    }
+  }
+
+  .ServicesList {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ServicesListItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .ServicesIcon {
+      font-size: 3rem;
+      border: 1px solid #121618;
+      padding: 20px;
+    }
+
+    p {
+      width: 70%;
+      text-align: center;
+    }
+  }
+}
