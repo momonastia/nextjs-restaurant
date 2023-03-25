@@ -6,17 +6,6 @@ import { RiLinkedinFill } from "react-icons/ri";
 import Image from "next/image";
 import styles from "./styles.module.scss";
 
-/* const textAnimation = {
-  hidden: {
-    y: -50,
-    opacity: 0,
-  },
-  visible: {
-    y: 0,
-    opacity: 1,
-  },
-};
- */
 const Footer = () => {
   return (
     <footer>
