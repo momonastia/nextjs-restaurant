@@ -6,6 +6,7 @@ import React from "react";
 import { useState } from "react";
 import styles from "./styles.module.scss";
 
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 

@@ -2,13 +2,25 @@ import { CiPizza } from "react-icons/ci";
 import { GrFacebookOption } from "react-icons/gr";
 import { AiOutlineYoutube, AiOutlineInstagram } from "react-icons/ai";
 import { RiLinkedinFill } from "react-icons/ri";
+
 import Image from "next/image";
 import styles from "./styles.module.scss";
 
+/* const textAnimation = {
+  hidden: {
+    y: -50,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
+ */
 const Footer = () => {
   return (
     <footer>
-      <div className={styles.FooterMain}>
+      <section className={styles.FooterMain}>
         <div className={styles.FooterContacts}>
           <div className={styles.logo}>
             <CiPizza /> Pizzeria
@@ -38,13 +50,13 @@ const Footer = () => {
             height={100}
           />
         </div>
-      </div>
-      <div className={styles.FooterSocial}>
+      </section>
+      <section className={styles.FooterSocial}>
         <GrFacebookOption />
         <AiOutlineInstagram />
         <AiOutlineYoutube />
         <RiLinkedinFill />
-      </div>
+      </section>
     </footer>
   );
 };

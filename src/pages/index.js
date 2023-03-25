@@ -3,7 +3,9 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import Link from "next/link";
+
 import styles from "@/styles/Home.module.scss";
+import OurServices from "components/ourServices/OurServices";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -57,6 +59,7 @@ export default function Home() {
           string cheese ex philly chicken pizza roll aliqua. Pepperoni
           mozzarella marinara occaecat pineapple irure.
         </p>
+        <OurServices />
         <Link href="/products" className={styles.btn}>
           All pizzas
         </Link>
