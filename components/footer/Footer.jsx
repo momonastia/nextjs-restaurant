@@ -31,7 +31,7 @@ const Footer = () => {
         <div className={styles.FooterMap}>
           <Image
             className={styles.mainImage}
-            src="/../public/static/images/map.png"
+            src="/static/images/map.png"
             alt="pizza"
             width={200}
             height={100}
