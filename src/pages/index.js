@@ -38,7 +38,7 @@ export default function Home() {
         <div className={styles.mainImageContainer}>
           <Image
             className={styles.mainImage}
-            src="/../public/images/pizza-3007395.jpg"
+            src="/../public/images/pizzaHero.jpg"
             alt="pizza"
             width={1000}
             height={500}
