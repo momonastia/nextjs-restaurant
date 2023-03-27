@@ -1,5 +1,6 @@
 .FooterMain {
   display: flex;
+  gap: 10px;
   color: grey;
   font-size: 0.7rem;
 
@@ -19,16 +20,19 @@
       justify-content: center;
       align-items: center;
       color: #ffc600;
+      margin-right: 10px;
       gap: 1rem;
       font-family: "Comforter", cursive;
     }
 
     .FooterName {
       font-size: large;
+      margin-right: 10px;
     }
 
     .FooterAdress {
       width: 70%;
+      margin-right: 10px;
     }
   }
 
@@ -65,6 +69,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .mainImage {
+      width: 100%;
+      height: fit-content;
+      margin: 10px;
+
+      img {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -90,4 +104,7 @@
     box-shadow: 0px 0px 10px 5px rgba(255, 198, 0, 0.81);
     transition: all 0.5s;
   }
+}
+
+@media screen and (min-width: 480px) {
 }

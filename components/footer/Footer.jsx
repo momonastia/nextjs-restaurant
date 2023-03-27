@@ -17,7 +17,7 @@ const Footer = () => {
           <div className={styles.FooterName}>Pizzeria LLC</div>
           <div className={styles.FooterAdress}>
             203 Fake St. Mountain View, San Francisco, California, USA +2 392
-            3929 210 info@yourdomain.com
+            3929 210
           </div>
         </div>
         <div className={styles.FooterAbout}>
@@ -25,9 +25,7 @@ const Footer = () => {
           <div className={styles.division}> </div>
           <div className={styles.FooterAboutText}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
-            accusantium illo mollitia dolor sapiente, officiis earum officia
-            quibusdam, culpa ipsa veniam distinctio excepturi repudiandae
-            debitis laborum ad. Quae, incidunt corporis.
+            accusantium illo mollitia dolor sapiente.
           </div>
         </div>
         <div className={styles.FooterMap}>
