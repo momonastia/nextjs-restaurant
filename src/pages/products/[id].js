@@ -2,7 +2,9 @@ import styles from "@/styles/pizzas.module.scss";
 import Image from "next/image";
 
 export const getStaticPaths = async () => {
-  const res = await fetch("http://localhost:5000/items");
+  const res = await fetch(
+    "https://my-json-server.typicode.com/momonastia/nextjs-restaurant/items"
+  );
   const data = await res.json();
 
   const paths = data.map((pizza) => {
@@ -20,7 +22,9 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (context) => {
   const id = context.params.id;
 
-  const res = await fetch(`http://localhost:5000/items/${id}`);
+  const res = await fetch(
+    `https://my-json-server.typicode.com/momonastia/nextjs-restaurant/items/${id}`
+  );
   const data = await res.json();
 
   return {

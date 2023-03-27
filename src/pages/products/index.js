@@ -5,7 +5,9 @@ import Head from "next/head";
 import styles from "@/styles/pizzas.module.scss";
 
 export const getStaticProps = async () => {
-  const res = await fetch("http://localhost:5000/items");
+  const res = await fetch(
+    "https://my-json-server.typicode.com/momonastia/nextjs-restaurant/items"
+  );
   const data = await res.json();
 
   return {
