@@ -17,7 +17,7 @@ export default function Home() {
         <meta name="title" content="pizza restaurant" />
       </Head>
       <div className={styles.Hero}>
-        <motion.h1
+        <motion.div
           initial={{ y: +50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ /* delay: 0.5, */ ease: "easeOut", duration: 1 }}
@@ -25,7 +25,7 @@ export default function Home() {
           className={`${styles.title}`}
         >
           Best pizza{" "}
-        </motion.h1>
+        </motion.div>
         <motion.p
           initial={{ y: +50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -52,13 +52,13 @@ export default function Home() {
           peppers esse. Bacon tempor sausage burnt mouth ricotta pan deep crust.
           Stuffed labore lasagna ullamco extra sauce thin crust.
         </p>
-        <p className={styles.text}>
+        {/* <p className={styles.text}>
           Esse chicken and bacon commodo peppers. Bacon lorem white pizza steak
           irure. Consequat mayo aute bianca sed white pizza. Esse bianca mayo
           sint black olives red onions. Pork broccoli reprehenderit parmesan,
           string cheese ex philly chicken pizza roll aliqua. Pepperoni
           mozzarella marinara occaecat pineapple irure.
-        </p>
+        </p> */}
         <OurServices />
         <Link href="/products" className={styles.btn}>
           All pizzas
