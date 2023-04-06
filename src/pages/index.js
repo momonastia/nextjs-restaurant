@@ -6,6 +6,7 @@ import Link from "next/link";
 
 import styles from "@/styles/Home.module.scss";
 import OurServices from "components/ourServices/OurServices";
+import OurTeam from "components/ourTeam/OurTeam";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -52,14 +53,8 @@ export default function Home() {
           peppers esse. Bacon tempor sausage burnt mouth ricotta pan deep crust.
           Stuffed labore lasagna ullamco extra sauce thin crust.
         </p>
-        {/* <p className={styles.text}>
-          Esse chicken and bacon commodo peppers. Bacon lorem white pizza steak
-          irure. Consequat mayo aute bianca sed white pizza. Esse bianca mayo
-          sint black olives red onions. Pork broccoli reprehenderit parmesan,
-          string cheese ex philly chicken pizza roll aliqua. Pepperoni
-          mozzarella marinara occaecat pineapple irure.
-        </p> */}
         <OurServices />
+        <OurTeam />
         <Link href="/products" className={styles.btn}>
           All pizzas
         </Link>

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import React, { useState, useEffect } from "react";
 import styles from ".//styles.module.scss";
 
 const textAnimation = {
@@ -26,6 +27,18 @@ const listAnimation = {
 };
 
 const OurTeam = () => {
+  const [teamList, setTeamList] = useState([]);
+
+  useEffect(() => {
+    fetch(
+      "https://my-json-server.typicode.com/momonastia/nextjs-restaurant/team"
+    )
+      .then((response) => response.json())
+      .then((data) => setTeamList(data));
+  }, []);
+
+  console.log(teamList);
+
   return (
     <motion.div
       initial="hidden"
@@ -44,33 +57,7 @@ const OurTeam = () => {
         whileInView="visible"
         viewport={{ amount: 0.2, once: true }}
       >
-        <motion.div
-          className={styles.ServicesListItem}
-          variants={listAnimation}
-          custom={1}
-        >
-          <GiCook className={styles.ServicesIcon} />
-          <h3>Profecional chiefs</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-        </motion.div>
-        <motion.div
-          className={styles.ServicesListItem}
-          variants={listAnimation}
-          custom={2}
-        >
-          <GiTomato className={styles.ServicesIcon} />
-          <h3>Fresh ingredients</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-        </motion.div>
-        <motion.div
-          className={styles.ServicesListItem}
-          variants={listAnimation}
-          custom={3}
-        >
-          <MdDeliveryDining className={styles.ServicesIcon} />
-          <h3>Fast delivery</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-        </motion.div>
+        <p>{teamList[0]?.name}</p>
       </motion.section>
     </motion.div>
   );
