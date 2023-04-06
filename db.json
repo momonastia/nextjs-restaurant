@@ -21,5 +21,22 @@
       "price": 200,
       "id": "003"
     }
+  ],
+  "team": [
+    {
+      "name": "John Donne",
+      "image": "https://api.lorem.space/image/face?w=250&h=150&hash=500B67FB",
+      "id": "001"
+    },
+    {
+      "name": "Steven Smith",
+      "image": "https://api.lorem.space/image/face?w=150&h=150&hash=500B67FB",
+      "id": "002"
+    },
+    {
+      "name": "Marta Loretti",
+      "image": "https://api.lorem.space/image/face?w=250&h=150&hash=500B67FB",
+      "id": "003"
+    }
   ]
 }

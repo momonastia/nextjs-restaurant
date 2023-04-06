@@ -59,7 +59,7 @@ const Pizza = ({ pizzas }) => {
                     <p>
                       {pizza.desc.length > 50
                         ? `${pizza.desc.substring(0, 50)}...`
-                        : pizza.desc}{" "}
+                        : pizza.desc}
                     </p>
                   </div>
                 </motion.div>
