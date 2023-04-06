@@ -25,7 +25,7 @@
   "team": [
     {
       "name": "John Donne",
-      "image": "https://api.lorem.space/image/face?w=250&h=150&hash=500B67FB",
+      "image": "https://api.lorem.space/image/face?w=150&h=150&hash=225E6693",
       "id": "001"
     },
     {
@@ -35,7 +35,12 @@
     },
     {
       "name": "Marta Loretti",
-      "image": "https://api.lorem.space/image/face?w=250&h=150&hash=500B67FB",
+      "image": "https://api.lorem.space/image/face?w=150&h=150&hash=4F32C4CF",
+      "id": "003"
+    },
+    {
+      "name": "Roberto Pignotti",
+      "image": "https://api.lorem.space/image/face?w=150&h=150&hash=2D297A22",
       "id": "003"
     }
   ]

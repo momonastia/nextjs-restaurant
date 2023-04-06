@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
 import styles from ".//styles.module.scss";
+import TeamCard from "components/teamCard/TeamCard";
 
 const textAnimation = {
   hidden: {
@@ -57,7 +58,11 @@ const OurTeam = () => {
         whileInView="visible"
         viewport={{ amount: 0.2, once: true }}
       >
-        <p>{teamList[0]?.name}</p>
+        <div>
+          {teamList.map((res) => {
+            return <TeamCard res={res} />;
+          })}
+        </div>
       </motion.section>
     </motion.div>
   );
