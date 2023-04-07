@@ -14,8 +14,8 @@ const TeamCard = ({ member }) => {
         ></Image>
       </div>
       <div className={styles.teamInfo}>
-        <h4>{member.name}</h4>
-        <h5>{member.role}</h5>
+        <div className={styles.teamMemberName}>{member.name}</div>
+        <div className={styles.teamMemberRole}>{member.role}</div>
       </div>
     </div>
   );

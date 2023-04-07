@@ -15,16 +15,14 @@ const textAnimation = {
   }),
 };
 
-const listAnimation = {
-  hidden: {
-    y: 100,
-    opacity: 0,
-  },
-  visible: (custom) => ({
-    y: 0,
+const menuVariants = {
+  visible: (i) => ({
     opacity: 1,
-    transition: { delay: custom * 0.5 },
+    transition: {
+      delay: i * 0.5,
+    },
   }),
+  hidden: { opacity: 0 },
 };
 
 const OurTeam = () => {
