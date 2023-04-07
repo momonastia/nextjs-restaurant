@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 
 const TeamCard = ({ member }) => {
   return (
-    <div className={styles.teamCard}>
+    <div className={styles.teamCard} key={member.id}>
       <div className={styles.imageContainer}>
         <Image
           src={`${member.image}`}
