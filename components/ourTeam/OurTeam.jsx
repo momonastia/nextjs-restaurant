@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
 import styles from "./styles.module.scss";
-import TeamCard from "components/teamCard/TeamCard";
+import MTeamCard from "components/teamCard/TeamCard";
 
 const textAnimation = {
   hidden: {
@@ -56,8 +56,18 @@ const OurTeam = () => {
         whileInView="visible"
         viewport={{ amount: 0.2, once: true }}
       >
-        {teamList.map((member) => {
-          return <TeamCard member={member} key={member.id} />;
+        {teamList.map((member, i) => {
+          return (
+            <MTeamCard
+              member={member}
+              key={member.id}
+              variants={menuVariants}
+              viewport={{ amount: 0.2, once: true }}
+              initial="hidden"
+              whileInView="visible"
+              custom={i + 1}
+            />
+          );
         })}
       </motion.section>
     </motion.div>
