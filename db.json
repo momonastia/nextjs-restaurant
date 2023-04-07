@@ -26,21 +26,25 @@
     {
       "name": "John Donne",
       "image": "https://api.lorem.space/image/face?w=150&h=150&hash=225E6693",
+      "role": "Chef",
       "id": "001"
     },
     {
       "name": "Steven Smith",
       "image": "https://api.lorem.space/image/face?w=150&h=150&hash=500B67FB",
+      "role": "Pizzaiolo",
       "id": "002"
     },
     {
       "name": "Marta Loretti",
       "image": "https://api.lorem.space/image/face?w=150&h=150&hash=4F32C4CF",
+      "role": "Pizzaiolo",
       "id": "003"
     },
     {
       "name": "Roberto Pignotti",
       "image": "https://api.lorem.space/image/face?w=150&h=150&hash=2D297A22",
+      "role": "Pizzaiolo",
       "id": "003"
     }
   ]

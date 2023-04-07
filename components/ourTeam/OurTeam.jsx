@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
-import styles from ".//styles.module.scss";
+import styles from "./styles.module.scss";
 import TeamCard from "components/teamCard/TeamCard";
 
 const textAnimation = {
@@ -58,11 +58,9 @@ const OurTeam = () => {
         whileInView="visible"
         viewport={{ amount: 0.2, once: true }}
       >
-        <div>
-          {teamList.map((res) => {
-            return <TeamCard res={res} />;
-          })}
-        </div>
+        {teamList.map((member) => {
+          return <TeamCard member={member} />;
+        })}
       </motion.section>
     </motion.div>
   );

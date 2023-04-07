@@ -1,7 +1,7 @@
 import { GiCook, GiTomato } from "react-icons/gi";
 import { MdDeliveryDining } from "react-icons/md";
 import { motion } from "framer-motion";
-import styles from ".//styles.module.scss";
+import styles from "./styles.module.scss";
 
 const textAnimation = {
   hidden: {
