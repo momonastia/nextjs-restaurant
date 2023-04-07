@@ -59,7 +59,7 @@ const OurTeam = () => {
         viewport={{ amount: 0.2, once: true }}
       >
         {teamList.map((member) => {
-          return <TeamCard member={member} />;
+          return <TeamCard member={member} key={member.id} />;
         })}
       </motion.section>
     </motion.div>
