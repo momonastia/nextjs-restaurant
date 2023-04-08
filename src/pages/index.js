@@ -25,7 +25,7 @@ export default function Home() {
           speed={0.1}
           className={`${styles.title}`}
         >
-          Best pizza{" "}
+          Best pizza
         </motion.div>
         <motion.p
           initial={{ y: +50, opacity: 0 }}
@@ -36,6 +36,17 @@ export default function Home() {
         >
           Delicious italian pizza
         </motion.p>
+        <motion.div
+          initial={{ y: +50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 1, ease: "easeOut", duration: 1 }}
+          speed={0.1}
+          className={`${styles.btnContainer}`}
+        >
+          <Link href="/products" className={styles.btn}>
+            Order now
+          </Link>
+        </motion.div>
         <div className={styles.mainImageContainer}>
           <Image
             className={styles.mainImage}
@@ -55,9 +66,6 @@ export default function Home() {
         </p>
         <OurServices />
         <OurTeam />
-        <Link href="/products" className={styles.btn}>
-          All pizzas
-        </Link>
       </div>
     </>
   );
