@@ -28,6 +28,10 @@ a:active {
   color: #ffc600;
 }
 
+.activeLink {
+  color: #ffc600;
+}
+
 .content {
   max-width: 1200px;
   margin: 24px auto;
@@ -36,6 +40,9 @@ a:active {
   border-radius: 10px;
   padding: 20px;
   background: #121618;
+  /*  background-image: url("pasta-italiana-con-menta-e-aglio.jpg");
+  background-size: cover;
+  background-position: center; */
 }
 header {
   display: flex;

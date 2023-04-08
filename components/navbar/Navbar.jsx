@@ -4,10 +4,12 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
 import React from "react";
 import { useState } from "react";
+import { useRouter } from "next/router";
 import styles from "./styles.module.scss";
 
-
 const Navbar = () => {
+  const router = useRouter();
+
   const [nav, setNav] = useState(false);
 
   return (
@@ -19,22 +21,31 @@ const Navbar = () => {
         className={nav ? [styles.menu, styles.active].join(" ") : [styles.menu]}
       >
         <li onClick={() => setNav(!nav)}>
-          <Link href="/">
+          <Link href="/" className={router.pathname == "/" ? "activeLink" : ""}>
             <BiHomeAlt /> Home
           </Link>
         </li>
         <li onClick={() => setNav(!nav)}>
-          <Link href="/products">
+          <Link
+            href="/products"
+            className={router.pathname == "/products" ? "activeLink" : ""}
+          >
             <BiFoodMenu /> Our menu
           </Link>
         </li>
         <li onClick={() => setNav(!nav)}>
-          <Link href="/reviews">
+          <Link
+            href="/reviews"
+            className={router.pathname == "/reviews" ? "activeLink" : ""}
+          >
             <MdOutlineRateReview /> Reviews
           </Link>
         </li>
         <li onClick={() => setNav(!nav)}>
-          <Link href="/about">
+          <Link
+            href="/about"
+            className={router.pathname == "/about" ? "activeLink" : ""}
+          >
             <MdOutlineContactSupport /> About us
           </Link>
         </li>
