@@ -2,7 +2,7 @@ import Link from "next/link";
 import Head from "next/head";
 import { motion } from "framer-motion";
 import styles from "@/styles/pizzas.module.scss";
-import MenuItem from "components/menuItem/menuItem";
+import MenuItem from "components/menuItem/MenuItem";
 
 export const getStaticProps = async () => {
   const res = await fetch(
