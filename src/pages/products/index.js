@@ -45,7 +45,7 @@ const Pizza = ({ pizzas }) => {
                   animate="visible"
                   custom={i}
                 >
-                  <MenuItem pizza={pizza} i={i} />
+                  <MenuItem pizza={pizza} />
                 </motion.div>
               </Link>
             );

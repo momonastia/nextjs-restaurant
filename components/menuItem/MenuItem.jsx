@@ -1,9 +1,9 @@
-import { motion } from "framer-motion";
 import Image from "next/image";
 import styles from "@/styles/pizzas.module.scss";
 import { Fragment } from "react";
+import OrderBtn from "components/orderBtn/OrderBtn";
 
-const MenuItem = ({ pizza, i }) => {
+const MenuItem = ({ pizza }) => {
   return (
     <Fragment>
       <div className={styles.imageContainer}>
@@ -22,6 +22,10 @@ const MenuItem = ({ pizza, i }) => {
             ? `${pizza.desc.substring(0, 50)}...`
             : pizza.desc}
         </p>
+        <div className={styles.orderInfo}>
+          <div>{pizza.price} euro </div>
+          <OrderBtn />
+        </div>
       </div>
     </Fragment>
   );
