@@ -16,12 +16,34 @@
     text-align: center;
   }
 
-  .AboutSectionImage {
-    position: absolute;
-    left: 70%;
-    top: 20%;
+  .AboutSectionImageContainer {
+    overflow-x: hidden;
 
-    opacity: 1;
-    rotate: -45deg;
+    .AboutSectionImage {
+      position: absolute;
+      left: 35%;
+      top: 60%;
+      scale: 25%;
+      opacity: 1;
+
+      overflow-x: hidden;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .AboutSection {
+    .AboutSectionImageContainer {
+      overflow-x: hidden;
+
+      .AboutSectionImage {
+        position: absolute;
+        left: 72%;
+        top: 20%;
+        scale: 80%;
+        opacity: 1;
+        rotate: -45deg;
+      }
+    }
   }
 }

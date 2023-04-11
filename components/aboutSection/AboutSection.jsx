@@ -18,13 +18,15 @@ const AboutSection = () => {
         height={180}
         className={styles.AboutSectionImage}
       /> */}
-      <Image
-        src="/static/images/NicePng_tomatoe-png_1630087.png"
-        alt="Tomatoes"
-        width={350}
-        height={350}
-        className={styles.AboutSectionImage}
-      />
+      <div className={styles.AboutSectionImageContainer}>
+        <Image
+          src="/static/images/NicePng_tomatoe-png_1630087.png"
+          alt="Tomatoes"
+          width={350}
+          height={400}
+          className={styles.AboutSectionImage}
+        />
+      </div>
     </section>
   );
 };
