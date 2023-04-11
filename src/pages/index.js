@@ -7,6 +7,7 @@ import Link from "next/link";
 import styles from "@/styles/Home.module.scss";
 import OurServices from "components/ourServices/OurServices";
 import OurTeam from "components/ourTeam/OurTeam";
+import AboutSection from "components/aboutSection/AboutSection";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -56,14 +57,7 @@ export default function Home() {
             height={500}
           />
         </div>
-        <p className={styles.text}>
-          Pizza ipsum dolor amet pan meatball green bell peppers chicken and
-          bacon sint. Incididunt ad extra sauce in mushrooms party broccoli,
-          laborum NY style in burnt mouth. Veniam id banana peppers, lasagna
-          officia Chicago style bbq sauce. Sausage stuffed crust et ex occaecat
-          peppers esse. Bacon tempor sausage burnt mouth ricotta pan deep crust.
-          Stuffed labore lasagna ullamco extra sauce thin crust.
-        </p>
+        <AboutSection />
         <OurServices />
         <OurTeam />
       </div>

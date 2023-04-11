@@ -10,6 +10,10 @@ module.exports = {
         protocol: "https",
         hostname: "api.lorem.space",
       },
-    ],
+      {
+        protocol: "https",
+        hostname: "www.seekpng.com",
+      },
+    ],    
   },
 };
