@@ -22,11 +22,11 @@
     .AboutSectionImage {
       position: absolute;
       left: 35%;
-      top: 60%;
+      top: 50%;
       scale: 25%;
       opacity: 1;
-
       overflow-x: hidden;
+      rotate: -110deg;
     }
   }
 }
@@ -38,11 +38,11 @@
 
       .AboutSectionImage {
         position: absolute;
-        left: 72%;
+        left: 75%;
         top: 20%;
-        scale: 80%;
+        scale: 60%;
         opacity: 1;
-        rotate: -45deg;
+        rotate: -90deg;
       }
     }
   }
