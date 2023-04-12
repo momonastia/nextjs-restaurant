@@ -1,4 +1,5 @@
 .ServicesContainer {
+  position: relative;
   background-color: #ffc600;
   .ServicesTitle {
     display: flex;
@@ -35,6 +36,20 @@
     p {
       width: 70%;
       text-align: center;
+    }
+  }
+
+  .AboutSectionImageContainer {
+    overflow-x: hidden;
+
+    .AboutSectionImage {
+      position: absolute;
+      right: 28%;
+      top: 83%;
+      scale: 25%;
+      opacity: 1;
+      overflow-x: hidden;
+      rotate: -110deg;
     }
   }
 }

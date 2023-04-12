@@ -1,6 +1,7 @@
 import { GiCook, GiTomato } from "react-icons/gi";
 import { MdDeliveryDining } from "react-icons/md";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import styles from "./styles.module.scss";
 
 const textAnimation = {
@@ -78,6 +79,15 @@ const OurServices = () => {
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
         </motion.div>
       </motion.section>
+      <div className={styles.AboutSectionImageContainer}>
+        <Image
+          src="/static/images/kisspng-italian-cuisine-basil-herb-leaf-vegetable-mozzarel-basil-5ac073111a4816.4059532515225618091077.png"
+          alt="Tomatoes"
+          width={350}
+          height={350}
+          className={styles.AboutSectionImage}
+        />
+      </div>
     </motion.div>
   );
 };
