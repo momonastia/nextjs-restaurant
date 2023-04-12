@@ -59,5 +59,13 @@
     .ServicesList {
       flex-direction: row;
     }
+
+    .AboutSectionImageContainer {
+      .AboutSectionImage {
+        right: 80%;
+        top: 65%;
+        scale: 40%;
+      }
+    }
   }
 }
