@@ -14,21 +14,20 @@ const Footer = () => {
           <div className={styles.logo}>
             <CiPizza /> Pizzeria
           </div>
-          <div className={styles.FooterName}>Pizzeria LLC</div>
+
           <div className={styles.FooterAdress}>
-            203 Fake St. Mountain View, San Francisco, California, USA +2 392
-            3929 210
+            203 Fake St. Mountain View, San Francisco, California
           </div>
         </div>
         <div className={styles.FooterAbout}>
           <h4>About us</h4>
           <div className={styles.division}> </div>
           <div className={styles.FooterAboutText}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
-            accusantium illo mollitia dolor sapiente.
+            Lorem ipsum dolor sit amet consectetur
           </div>
         </div>
         <div className={styles.FooterMap}>
+          <div className={styles.FooterName}>We all around the world</div>
           <Image
             className={styles.mainImageMap}
             src="/static/images/map.png"
