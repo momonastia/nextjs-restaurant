@@ -1,5 +1,6 @@
 import styles from "@/styles/pizzas.module.scss";
 import Image from "next/image";
+import OrderBtn from "components/orderBtn/OrderBtn";
 
 export const getStaticPaths = async () => {
   const res = await fetch(
@@ -38,18 +39,20 @@ const Details = ({ pizza }) => {
   return (
     <div className={styles.singlePizza}>
       <h1>{pizza.name}</h1>
-      <div className={styles.imageContainer}>
-        <Image
-          src={`${pizza.image}`}
-          alt={`${pizza.name}`}
-          width="250"
-          height="150"
-          Layout="responsive"
-        ></Image>
+      <div className={styles.descriptionContainer}>
+        <div className={styles.imageContainer}>
+          <Image
+            src={`${pizza.image}`}
+            alt={`${pizza.name}`}
+            width="250"
+            height="150"
+            Layout="responsive"
+          ></Image>
+          <div>{pizza.price} euro </div>
+        </div>
+        <div>{pizza.desc}</div>
       </div>
-      <div>
-        <p>{pizza.desc}</p>
-      </div>
+      <div className={styles.orderInfo}></div>
     </div>
   );
 };

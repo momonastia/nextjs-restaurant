@@ -69,9 +69,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 150px;
 
-    .mainImage {
+    .mainImageMap {
       width: 100%;
+      scale: 50%;
       height: fit-content;
       margin: 10px;
 
