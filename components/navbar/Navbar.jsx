@@ -1,6 +1,10 @@
 import { BiFoodMenu, BiHomeAlt } from "react-icons/bi";
 import { MdOutlineRateReview, MdOutlineContactSupport } from "react-icons/md";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import {
+  AiOutlineMenu,
+  AiOutlineClose,
+  AiOutlineShoppingCart,
+} from "react-icons/ai";
 import Link from "next/link";
 import React from "react";
 import { useState } from "react";
@@ -47,6 +51,14 @@ const Navbar = () => {
             className={router.pathname == "/about" ? "activeLink" : ""}
           >
             <MdOutlineContactSupport /> About us
+          </Link>
+        </li>
+        <li onClick={() => setNav(!nav)}>
+          <Link
+            href="/cart"
+            className={router.pathname == "/cart" ? "activeLink" : ""}
+          >
+            <AiOutlineShoppingCart /> Cart
           </Link>
         </li>
       </ul>
