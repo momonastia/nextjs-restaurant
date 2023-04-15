@@ -25,14 +25,17 @@ const Navbar = () => {
         className={nav ? [styles.menu, styles.active].join(" ") : [styles.menu]}
       >
         <li onClick={() => setNav(!nav)}>
-          <Link href="/" className={router.pathname == "/" ? "activeLink" : ""}>
+          <Link
+            href="/"
+            className={router.pathname == "/" ? styles.activeLink : ""}
+          >
             <BiHomeAlt /> Home
           </Link>
         </li>
         <li onClick={() => setNav(!nav)}>
           <Link
             href="/products"
-            className={router.pathname == "/products" ? "activeLink" : ""}
+            className={router.pathname == "/products" ? styles.activeLink : ""}
           >
             <BiFoodMenu /> Our menu
           </Link>
@@ -40,7 +43,7 @@ const Navbar = () => {
         <li onClick={() => setNav(!nav)}>
           <Link
             href="/reviews"
-            className={router.pathname == "/reviews" ? "activeLink" : ""}
+            className={router.pathname == "/reviews" ? styles.activeLink : ""}
           >
             <MdOutlineRateReview /> Reviews
           </Link>
@@ -48,7 +51,7 @@ const Navbar = () => {
         <li onClick={() => setNav(!nav)}>
           <Link
             href="/about"
-            className={router.pathname == "/about" ? "activeLink" : ""}
+            className={router.pathname == "/about" ? styles.activeLink : ""}
           >
             <MdOutlineContactSupport /> About us
           </Link>
@@ -56,7 +59,7 @@ const Navbar = () => {
         <li onClick={() => setNav(!nav)}>
           <Link
             href="/cart"
-            className={router.pathname == "/cart" ? "activeLink" : ""}
+            className={router.pathname == "/cart" ? styles.activeLink : ""}
           >
             <AiOutlineShoppingCart /> Cart
           </Link>
