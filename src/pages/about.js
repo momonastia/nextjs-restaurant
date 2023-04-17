@@ -1,4 +1,5 @@
 import Head from "next/head";
+import styles from "@/styles/about.module.scss";
 
 const AboutPage = () => {
   return (
