@@ -1,4 +1,5 @@
 import Head from "next/head";
+import styles from "@/styles/cart.module.scss";
 
 const Cart = () => {
   return (
