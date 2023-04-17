@@ -3,7 +3,7 @@ import styles from "@/styles/pizzas.module.scss";
 import { Fragment } from "react";
 import OrderBtn from "components/orderBtn/OrderBtn";
 
-const MenuItem = ({ pizza }) => {
+const MenuItem = ({ pizza, addToOrder }) => {
   return (
     <Fragment>
       <div className={styles.imageContainer}>
@@ -24,7 +24,9 @@ const MenuItem = ({ pizza }) => {
         </p>
         <div className={styles.orderInfo}>
           <div>{pizza.price} euro </div>
-          <OrderBtn />
+          <div onClick={() => addToOrder(pizza)}>
+            <OrderBtn />
+          </div>
         </div>
       </div>
     </Fragment>

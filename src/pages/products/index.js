@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Head from "next/head";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import styles from "@/styles/pizzas.module.scss";
 import MenuItem from "components/menuItem/MenuItem";
@@ -16,6 +17,14 @@ export const getStaticProps = async () => {
 };
 
 const Pizza = ({ pizzas }) => {
+  const [orders, setOrders] = useState([]);
+
+  const addToOrder = (item) => {
+    setOrders([...orders, item]);
+  };
+
+  console.log("Orders:", orders);
+
   const menuVariants = {
     visible: (i) => ({
       opacity: 1,
@@ -37,17 +46,18 @@ const Pizza = ({ pizzas }) => {
         <div className={styles.cardsContainer}>
           {pizzas.map((pizza, i) => {
             return (
-              <Link href={`/products/${pizza.id}`} key={pizza.id}>
-                <motion.div
-                  className={styles.pizzaCard}
-                  variants={menuVariants}
-                  initial="hidden"
-                  animate="visible"
-                  custom={i}
-                >
-                  <MenuItem pizza={pizza} />
-                </motion.div>
-              </Link>
+              <div>
+                <Link href={`/products/${pizza.id}`} key={pizza.id}>
+                  <motion.div
+                    className={styles.pizzaCard}
+                    variants={menuVariants}
+                    initial="hidden"
+                    animate="visible"
+                    custom={i}
+                  ></motion.div>
+                </Link>
+                <MenuItem pizza={pizza} addToOrder={addToOrder} />
+              </div>
             );
           })}
         </div>
