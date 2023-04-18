@@ -1,11 +1,10 @@
 import Image from "next/image";
 import styles from "@/styles/pizzas.module.scss";
 import { Fragment } from "react";
-import OrderBtn from "components/orderBtn/OrderBtn";
 
-const MenuItem = ({ pizza, addToOrder }) => {
+const MenuItem = ({ pizza }) => {
   return (
-    <Fragment>
+    <div className={styles.pizzaCard}>
       <div className={styles.imageContainer}>
         <Image
           src={`${pizza.image}`}
@@ -24,12 +23,9 @@ const MenuItem = ({ pizza, addToOrder }) => {
         </p>
         <div className={styles.orderInfo}>
           <div>{pizza.price} euro </div>
-          <div onClick={() => addToOrder(pizza)}>
-            <OrderBtn />
-          </div>
         </div>
       </div>
-    </Fragment>
+    </div>
   );
 };
 

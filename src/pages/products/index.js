@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import styles from "@/styles/pizzas.module.scss";
 import MenuItem from "components/menuItem/MenuItem";
 import InitailContext from "@/store/context";
+import OrderBtn from "components/orderBtn/OrderBtn";
 
 export const getStaticProps = async () => {
   const res = await fetch(
@@ -49,16 +50,18 @@ const Pizza = ({ pizzas }) => {
           {pizzas.map((pizza, i) => {
             return (
               <div key={pizza.id}>
-                <Link href={`/products/${pizza.id}`}>
-                  <motion.div
-                    className={styles.pizzaCard}
-                    variants={menuVariants}
-                    initial="hidden"
-                    animate="visible"
-                    custom={i}
-                  ></motion.div>
-                </Link>
-                <MenuItem pizza={pizza} addToOrder={addToOrder} />
+                <motion.div
+                  className={styles.pizzaCard}
+                  variants={menuVariants}
+                  initial="hidden"
+                  animate="visible"
+                  custom={i}
+                >
+                  <Link href={`/products/${pizza.id}`}>
+                    <MenuItem pizza={pizza} />
+                  </Link>
+                  <OrderBtn pizza={pizza} addToOrder={addToOrder} />
+                </motion.div>
               </div>
             );
           })}

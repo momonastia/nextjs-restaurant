@@ -16,7 +16,7 @@ const Cart = () => {
       <div>
         <h1>Cart</h1>
         {context.state.orders.map((item) => (
-          <MenuItem pizza={item} />
+          <MenuItem pizza={item} key={item.id} />
         ))}
       </div>
     </>
