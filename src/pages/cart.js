@@ -16,6 +16,12 @@ const Cart = () => {
       payload: item.id,
     });
   };
+
+  let totalOrder = 0;
+  context.state.orders.forEach((element) => {
+    totalOrder += Number.parseFloat(element.price);
+  });
+
   return (
     <>
       <Head>
@@ -24,12 +30,20 @@ const Cart = () => {
       </Head>
       <div>
         <h1>Cart</h1>
-        {context.state.orders.map((item) => (
-          <>
-            <MenuItem pizza={item} key={item.id} />
-            <DeleteBtn pizza={item} removeFromOrder={removeFromOrder} />
-          </>
-        ))}
+
+        {context.state.orders.length > 0 ? (
+          <div className={styles.cartList}>
+            {context.state.orders.map((item) => (
+              <div>
+                <MenuItem pizza={item} key={item.id} />
+                <DeleteBtn pizza={item} removeFromOrder={removeFromOrder} />
+              </div>
+            ))}
+            <p>Total: {totalOrder} EUR </p>
+          </div>
+        ) : (
+          <h2>You cart is empty</h2>
+        )}
       </div>
     </>
   );

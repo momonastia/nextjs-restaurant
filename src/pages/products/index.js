@@ -20,12 +20,20 @@ export const getStaticProps = async () => {
 
 const Pizza = ({ pizzas }) => {
   const { dispatch } = useContext(InitailContext);
+  const context = useContext(InitailContext);
 
   const addToOrder = (item) => {
-    dispatch({
-      type: "ADD_ITEM",
-      payload: item,
+    /* перед диспачем проверка чтобы продукт не добавлялся 
+    более одного раза м.б. стоит убрать */
+    let isInArray = false;
+    context.state.orders.forEach((element) => {
+      if (element.id === item.id) isInArray = true;
     });
+    if (!isInArray)
+      dispatch({
+        type: "ADD_ITEM",
+        payload: item,
+      });
   };
 
   const menuVariants = {
