@@ -1,9 +1,10 @@
 import Link from "next/link";
 import Head from "next/head";
-import { useState } from "react";
+import { useContext } from "react";
 import { motion } from "framer-motion";
 import styles from "@/styles/pizzas.module.scss";
 import MenuItem from "components/menuItem/MenuItem";
+import InitailContext from "@/store/context";
 
 export const getStaticProps = async () => {
   const res = await fetch(
@@ -17,13 +18,14 @@ export const getStaticProps = async () => {
 };
 
 const Pizza = ({ pizzas }) => {
-  const [orders, setOrders] = useState([]);
+  const { dispatch } = useContext(InitailContext);
 
   const addToOrder = (item) => {
-    setOrders([...orders, item]);
+    dispatch({
+      type: "ADD_ITEM",
+      payload: item,
+    });
   };
-
-  console.log("Orders:", orders);
 
   const menuVariants = {
     visible: (i) => ({
@@ -46,8 +48,8 @@ const Pizza = ({ pizzas }) => {
         <div className={styles.cardsContainer}>
           {pizzas.map((pizza, i) => {
             return (
-              <div>
-                <Link href={`/products/${pizza.id}`} key={pizza.id}>
+              <div key={pizza.id}>
+                <Link href={`/products/${pizza.id}`}>
                   <motion.div
                     className={styles.pizzaCard}
                     variants={menuVariants}

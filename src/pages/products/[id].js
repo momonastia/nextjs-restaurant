@@ -1,6 +1,6 @@
 import styles from "@/styles/pizzas.module.scss";
 import Image from "next/image";
-import OrderBtn from "components/orderBtn/OrderBtn";
+
 
 export const getStaticPaths = async () => {
   const res = await fetch(
