@@ -6,7 +6,12 @@ const mainReducer = (state, action) => {
         ...state,
         orders: [...state.orders, action.payload],
       };
-
+    case "REMOVE_ITEM":
+      console.log("Global state", state);
+      return {
+        ...state,
+        orders: state.orders.filter((item) => item.id !== action.payload),
+      };
     default:
       return state;
   }

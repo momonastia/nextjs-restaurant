@@ -1,0 +1,19 @@
+.btn {
+  display: block;
+  width: 100px;
+  padding: 4px 0;
+  /* margin: 10px auto 40px; */
+  background: #ffc600;
+  border-radius: 8px;
+  color: #121618;
+  text-align: center;
+  border: 1px solid #ffc600;
+}
+
+.btn:hover {
+  background: transparent;
+  color: #ffc600;
+  transition: all 0.5s;
+  cursor: pointer;
+  scale: 1.05;
+}
