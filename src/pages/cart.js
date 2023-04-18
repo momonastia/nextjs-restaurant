@@ -34,8 +34,8 @@ const Cart = () => {
         {context.state.orders.length > 0 ? (
           <div className={styles.cartList}>
             {context.state.orders.map((item) => (
-              <div>
-                <MenuItem pizza={item} key={item.id} />
+              <div key={item.id}>
+                <MenuItem pizza={item} />
                 <DeleteBtn pizza={item} removeFromOrder={removeFromOrder} />
               </div>
             ))}
