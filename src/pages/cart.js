@@ -1,7 +1,12 @@
 import Head from "next/head";
+import { useContext } from "react";
+import InitailContext from "@/store/context";
+import MenuItem from "components/menuItem/MenuItem";
 import styles from "@/styles/cart.module.scss";
 
 const Cart = () => {
+  const context = useContext(InitailContext);
+  console.log("context qui", context.state.orders);
   return (
     <>
       <Head>
@@ -10,6 +15,9 @@ const Cart = () => {
       </Head>
       <div>
         <h1>Cart</h1>
+        {context.state.orders.map((item) => (
+          <MenuItem pizza={item} />
+        ))}
       </div>
     </>
   );
