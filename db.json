@@ -5,21 +5,24 @@
       "image": "https://api.lorem.space/image/pizza?w=250&h=150&hash=8B7BCDC2",
       "desc": "Reprehenderit chicken and bacon veniam, do garlic sauce sed mayo enim mushrooms dolor. Garlic sauce chicken and bacon chicken hawaiian black olives extra cheese, dolore ut. Incididunt tempor laboris esse pizza chicken wing sint. Reprehenderit non white garlic, large veniam qui pesto enim pizza roll. Do chicken wing labore ipsum proident, sint extra sauce minim garlic parmesan ad pizza qui personal sausage. Pork consequat dolor, est quis peppers ea chicken and bacon burnt mouth ranch pariatur meatball chicken tempor bianca. Mushrooms deep crust sauteed onions, nostrud enim steak culpa chicken and bacon meatball pariatur.",
       "price": 10,
-      "id": "001"
+      "id": "001",
+      "count": 1
     },
     {
       "name": "Romana",
       "image": "https://api.lorem.space/image/pizza?w=250&h=150&hash=4F32C4CF",
       "desc": "Laborum thin crust banana peppers, burnt mouth dolor et mushrooms string cheese proident ea meatball chicken wing extra sauce velit white garlic. Spinach officia fugiat mollit nostrud, party pariatur banana peppers pizza. Laborum dolore ham in. Green bell peppers esse pork quis, pepperoni adipisicing fugiat chicken wing enim. Philly chicken pizza roll nisi in anchovies culpa beef, ullamco mushrooms. Mozzarella garlic spinach ricotta.",
       "price": 15,
-      "id": "002"
+      "id": "002",
+      "count": 1
     },
     {
       "name": "Marinara",
       "image": "https://api.lorem.space/image/pizza?w=250&h=150&hash=A89D0DE6",
       "desc": "Thin crust chicken wing occaecat ut cillum string cheese lasagna aliqua quis black olives aliquip extra cheese garlic buffalo sauce commodo. Nisi steak philly steak buffalo sauce, id ad chicken wing occaecat melted cheese hawaiian garlic parmesan garlic sauce. Commodo nostrud white garlic ullamco stuffed pesto. In platter tempor et magna. Garlic dolore mozzarella thin crust string cheese. Peppers in nulla pariatur steak onions garlic sauce fugiat reprehenderit elit garlic parmesan. NY style cupidatat sausage occaecat eiusmod.",
       "price": 17,
-      "id": "003"
+      "id": "003",
+      "count": 1
     }
   ],
   "team": [
