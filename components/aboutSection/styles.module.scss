@@ -6,6 +6,10 @@
   justify-content: center;
   align-items: center;
   color: rgb(176, 176, 176);
+  background: rgb(18, 22, 24);
+  background: rgb(11, 14, 15);
+  background: rgb(11, 14, 15);
+  background: linear-gradient(90deg, rgba(11, 14, 15, 1) 0%, rgb(4, 4, 4) 100%);
 
   h3 {
     text-align: center;
@@ -27,7 +31,7 @@
       opacity: 1;
       overflow-x: hidden;
       rotate: -110deg;
-      z-index: 100;
+      z-index: 2;
     }
   }
 }

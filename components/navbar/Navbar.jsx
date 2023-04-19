@@ -65,12 +65,10 @@ const Navbar = () => {
             className={router.pathname == "/cart" ? styles.activeLink : ""}
           >
             <AiOutlineShoppingCart /> Cart
-            {context.state.orders.length > 0 ? (
+            {context.state.orders.length > 0 && (
               <div className={styles.cartNotEmptySign}>
                 {context.state.orders.length}
               </div>
-            ) : (
-              ""
             )}
           </Link>
         </li>
