@@ -7,7 +7,8 @@ import {
 } from "react-icons/ai";
 import Link from "next/link";
 import React from "react";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import InitailContext from "@/store/context";
 import { useRouter } from "next/router";
 import styles from "./styles.module.scss";
 
@@ -15,6 +16,8 @@ const Navbar = () => {
   const router = useRouter();
 
   const [nav, setNav] = useState(false);
+
+  const context = useContext(InitailContext);
 
   return (
     <div className={styles.container}>
@@ -56,12 +59,19 @@ const Navbar = () => {
             <MdOutlineContactSupport /> About us
           </Link>
         </li>
-        <li onClick={() => setNav(!nav)}>
+        <li onClick={() => setNav(!nav)} className={styles.cartNavItem}>
           <Link
             href="/cart"
             className={router.pathname == "/cart" ? styles.activeLink : ""}
           >
             <AiOutlineShoppingCart /> Cart
+            {context.state.orders.length > 0 ? (
+              <div className={styles.cartNotEmptySign}>
+                {context.state.orders.length}
+              </div>
+            ) : (
+              ""
+            )}
           </Link>
         </li>
       </ul>

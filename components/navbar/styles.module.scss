@@ -23,6 +23,25 @@
     height: 100%;
     width: 100%;
     transition: right 1s;
+
+    .cartNavItem {
+      position: relative;
+      .cartNotEmptySign {
+        position: absolute;
+        left: 12%;
+        bottom: 5%;
+        width: 18px;
+        height: 18px;
+        background-color: red;
+        border-radius: 50%;
+        opacity: 0.8;
+        color: #cbcbcb;
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
   }
 
   .active {
