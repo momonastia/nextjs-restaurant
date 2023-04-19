@@ -29,7 +29,7 @@ const Cart = () => {
         <meta name="title" content="pizza restaurant" />
       </Head>
       <div>
-        <h1>Cart</h1>
+        <h1 className={styles.cartTitle}>Cart</h1>
 
         {context.state.orders.length > 0 ? (
           <div className={styles.cartList}>
@@ -42,7 +42,7 @@ const Cart = () => {
             <p>Total: {totalOrder} EUR </p>
           </div>
         ) : (
-          <h2>You cart is empty</h2>
+          <h2 className={styles.cartList}>You cart is empty</h2>
         )}
       </div>
     </>

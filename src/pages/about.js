@@ -9,7 +9,7 @@ const AboutPage = () => {
         <meta name="title" content="pizza restaurant" />
       </Head>
       <div>
-        <h1>About us</h1>
+        <h1 className={styles.aboutUsTitle}>About us</h1>
       </div>
     </>
   );

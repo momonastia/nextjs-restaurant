@@ -11,7 +11,7 @@ const Reviews = ({ reviews }) => {
         <meta name="title" content="pizza restaurant" />
       </Head>
       <div>
-        <h1>Client reviews</h1>
+        <h1 className={styles.reviewsTitle}>Client reviews</h1>
         <div className={styles.reviews}>
           {!!reviews.length &&
             reviews.slice(0, 20).map((res) => {
