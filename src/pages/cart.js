@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useContext } from "react";
 import InitailContext from "@/store/context";
-import MenuItem from "components/menuItem/MenuItem";
+import CartItem from "components/cartItem/CartItem";
 import styles from "@/styles/cart.module.scss";
 import DeleteBtn from "components/deleteBtn/DeleteBtn";
 
@@ -35,8 +35,7 @@ const Cart = () => {
           <div className={styles.cartList}>
             {context.state.orders.map((item) => (
               <div key={item.id}>
-                <MenuItem pizza={item} />
-                <DeleteBtn pizza={item} removeFromOrder={removeFromOrder} />
+                <CartItem pizza={item} removeFromOrder={removeFromOrder} />
               </div>
             ))}
             <p>Total: {totalOrder} EUR </p>
