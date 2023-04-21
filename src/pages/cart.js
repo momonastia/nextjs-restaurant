@@ -1,9 +1,10 @@
 import Head from "next/head";
+import Link from "next/link";
 import { useContext } from "react";
 import InitailContext from "@/store/context";
 import CartItem from "components/cartItem/CartItem";
 import styles from "@/styles/cart.module.scss";
-import DeleteBtn from "components/deleteBtn/DeleteBtn";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 
 const Cart = () => {
   const context = useContext(InitailContext);
@@ -38,10 +39,16 @@ const Cart = () => {
                 <CartItem pizza={item} removeFromOrder={removeFromOrder} />
               </div>
             ))}
-            <p>Total: {totalOrder} EUR </p>
+            <p className={styles.cartListTotal}>Total: {totalOrder} EUR </p>
           </div>
         ) : (
-          <h2 className={styles.cartList}>You cart is empty</h2>
+          <div className={styles.emptyCartSection}>
+            <AiOutlineShoppingCart className={styles.cartIcon} />
+            <h2>You cart is empty</h2>
+            <Link href="/products" className={styles.btn}>
+              Order now
+            </Link>
+          </div>
         )}
       </div>
     </>

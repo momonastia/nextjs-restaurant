@@ -25,15 +25,16 @@ const Pizza = ({ pizzas }) => {
   const addToOrder = (item) => {
     /* перед диспачем проверка чтобы продукт не добавлялся 
     более одного раза м.б. стоит убрать */
-    let isInArray = false;
+    /* let isInArray = false;
     context.state.orders.forEach((element) => {
       if (element.id === item.id) isInArray = true;
+    }); */
+    /* if (!isInArray) */
+    dispatch({
+      type: "ADD_ITEM",
+      payload: item,
     });
-    if (!isInArray)
-      dispatch({
-        type: "ADD_ITEM",
-        payload: item,
-      });
+    console.log(context.state);
   };
 
   const menuVariants = {
