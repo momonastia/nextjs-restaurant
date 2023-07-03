@@ -76,7 +76,7 @@ const Navbar = () => {
       <div onClick={() => setNav(!nav)} className={styles.mobile_btn}>
         {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
       </div>
-      <p>test2</p>
+      <p>test4</p>
     </div>
   );
 };
