@@ -1,0 +1,48 @@
+.pizzaOrderItem {
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  margin: 1rem;
+  font-size: 0.8rem;
+  color: #7d7d7d;
+
+  .imageOrderContainer {
+    margin: 0;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    width: 50px;
+
+    img {
+      border-radius: 5px;
+      scale: 70%;
+    }
+  }
+  .pizzaInfo {
+    width: 4rem;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .pizzaOrderItem {
+    width: 90%;
+    font-size: 1rem;
+
+    .imageOrderContainer {
+      margin: 14px;
+      width: auto;
+      img {
+        scale: 100%;
+      }
+    }
+    .pizzaInfo {
+      width: 2rem;
+    }
+  }
+}

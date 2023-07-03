@@ -1,0 +1,11 @@
+.aboutUsTitle {
+  color: #7d7d7d;
+  padding-left: 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .aboutUsTitle {
+    text-align: left;
+  }
+}

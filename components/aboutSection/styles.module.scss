@@ -1,0 +1,54 @@
+.AboutSection {
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(176, 176, 176);
+  background: rgb(18, 22, 24);
+  background: rgb(11, 14, 15);
+  background: rgb(11, 14, 15);
+  background: linear-gradient(90deg, rgba(11, 14, 15, 1) 0%, rgb(4, 4, 4) 100%);
+
+  h3 {
+    text-align: center;
+  }
+
+  p {
+    width: 70%;
+    text-align: center;
+  }
+
+  .AboutSectionImageContainer {
+    overflow-x: hidden;
+
+    .AboutSectionImage {
+      position: absolute;
+      left: 35%;
+      top: 50%;
+      scale: 25%;
+      opacity: 1;
+      overflow-x: hidden;
+      rotate: -110deg;
+      z-index: 2;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .AboutSection {
+    .AboutSectionImageContainer {
+      overflow-x: hidden;
+
+      .AboutSectionImage {
+        position: absolute;
+        left: 75%;
+        top: 20%;
+        scale: 60%;
+        opacity: 1;
+        rotate: -90deg;
+      }
+    }
+  }
+}

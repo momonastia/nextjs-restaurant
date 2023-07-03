@@ -1,0 +1,56 @@
+.teamCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+
+  .imageContainer {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      border-radius: 50%;
+      border: 1px solid gray;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .teamInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .teamMemberName {
+      padding-top: 8px;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    .teamMemberRole {
+      font-size: 0.6rem;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .teamCard {
+    .imageContainer img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .teamInfo {
+      .teamMemberName {
+        padding-top: 12px;
+        font-size: 1.4rem;
+      }
+      .teamMemberRole {
+        font-size: 1rem;
+      }
+    }
+  }
+}

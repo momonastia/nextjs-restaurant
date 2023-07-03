@@ -1,0 +1,71 @@
+.ServicesContainer {
+  position: relative;
+  background-color: #ffc600;
+  .ServicesTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      width: 50%;
+      text-align: center;
+    }
+  }
+
+  .ServicesList {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .ServicesListItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .ServicesIcon {
+      font-size: 3rem;
+      border: 1px solid #121618;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    p {
+      width: 70%;
+      text-align: center;
+    }
+  }
+
+  .AboutSectionImageContainer {
+    overflow-x: hidden;
+
+    .AboutSectionImage {
+      position: absolute;
+      right: 28%;
+      top: 83%;
+      scale: 25%;
+      opacity: 1;
+      overflow-x: hidden;
+      rotate: -110deg;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .ServicesContainer {
+    .ServicesList {
+      flex-direction: row;
+    }
+
+    .AboutSectionImageContainer {
+      .AboutSectionImage {
+        right: 80%;
+        top: 65%;
+        scale: 40%;
+      }
+    }
+  }
+}

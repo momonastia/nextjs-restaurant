@@ -1,0 +1,96 @@
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: transparent;
+
+  .menu {
+    background-color: rgba(116, 116, 116, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    position: fixed;
+    right: -110%;
+    margin: 0;
+    bottom: 0;
+    z-index: 10;
+    opacity: 0.95;
+    height: 100%;
+    width: 100%;
+    transition: right 1s;
+
+    .cartNavItem {
+      position: relative;
+      .cartNotEmptySign {
+        position: absolute;
+        left: 12%;
+        bottom: 5%;
+        width: 18px;
+        height: 18px;
+        background-color: red;
+        border-radius: 50%;
+        opacity: 0.8;
+        color: #cbcbcb;
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .active {
+    right: -60%;
+  }
+
+  ul {
+    list-style: none;
+    font-size: 1.2rem;
+
+    li {
+      margin-top: 80px;
+      margin-bottom: -60px;
+    }
+  }
+
+  .mobile_btn {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    cursor: pointer;
+    z-index: 10;
+    color: #cbcbcb;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    .mobile_btn {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    .menu {
+      flex-direction: row;
+      right: 0;
+      position: relative;
+      background-color: transparent;
+
+      li {
+        margin: 0;
+      }
+    }
+  }
+}
+.activeLink {
+  color: #ffc600;
+}

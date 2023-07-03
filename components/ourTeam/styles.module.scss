@@ -1,0 +1,37 @@
+.TeamContainer {
+  background-color: transparent;
+  color: rgb(167, 168, 169);
+  .TeamTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      width: 50%;
+      text-align: center;
+    }
+  }
+
+  .TeamList {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .TeamContainer {
+    .TeamList {
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+}
