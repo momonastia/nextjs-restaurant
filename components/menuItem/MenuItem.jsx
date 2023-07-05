@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "@/styles/pizzas.module.scss";
-import { Fragment } from "react";
 
 const MenuItem = ({ pizza }) => {
   return (
