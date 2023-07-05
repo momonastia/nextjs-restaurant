@@ -2,7 +2,7 @@
   "items": [
     {
       "name": "Margherita",
-      "image": "public/static/images/margherita.jpg",
+      "image": "/public/static/images/margherita.jpg",
       "desc": "Reprehenderit chicken and bacon veniam, do garlic sauce sed mayo enim mushrooms dolor. Garlic sauce chicken and bacon chicken hawaiian black olives extra cheese, dolore ut. Incididunt tempor laboris esse pizza chicken wing sint. Reprehenderit non white garlic, large veniam qui pesto enim pizza roll. Do chicken wing labore ipsum proident, sint extra sauce minim garlic parmesan ad pizza qui personal sausage. Pork consequat dolor, est quis peppers ea chicken and bacon burnt mouth ranch pariatur meatball chicken tempor bianca. Mushrooms deep crust sauteed onions, nostrud enim steak culpa chicken and bacon meatball pariatur.",
       "price": 10,
       "id": "001",
