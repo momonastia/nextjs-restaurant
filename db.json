@@ -10,7 +10,7 @@
     },
     {
       "name": "Romana",
-      "image": "https://api.lorem.space/image/pizza?w=250&h=150&hash=4F32C4CF",
+      "image": "/static/images/romana.jpg",
       "desc": "Laborum thin crust banana peppers, burnt mouth dolor et mushrooms string cheese proident ea meatball chicken wing extra sauce velit white garlic. Spinach officia fugiat mollit nostrud, party pariatur banana peppers pizza. Laborum dolore ham in. Green bell peppers esse pork quis, pepperoni adipisicing fugiat chicken wing enim. Philly chicken pizza roll nisi in anchovies culpa beef, ullamco mushrooms. Mozzarella garlic spinach ricotta.",
       "price": 15,
       "id": "002",
@@ -18,7 +18,7 @@
     },
     {
       "name": "Marinara",
-      "image": "https://api.lorem.space/image/pizza?w=250&h=150&hash=A89D0DE6",
+      "image": "/static/images/marinara.jpg",
       "desc": "Thin crust chicken wing occaecat ut cillum string cheese lasagna aliqua quis black olives aliquip extra cheese garlic buffalo sauce commodo. Nisi steak philly steak buffalo sauce, id ad chicken wing occaecat melted cheese hawaiian garlic parmesan garlic sauce. Commodo nostrud white garlic ullamco stuffed pesto. In platter tempor et magna. Garlic dolore mozzarella thin crust string cheese. Peppers in nulla pariatur steak onions garlic sauce fugiat reprehenderit elit garlic parmesan. NY style cupidatat sausage occaecat eiusmod.",
       "price": 17,
       "id": "003",
