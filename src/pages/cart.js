@@ -19,6 +19,9 @@ const Cart = () => {
   };
 
   const updateQuantity = (item, quantity) => {
+    if (quantity <= 0) {
+      removeFromOrder(item)
+    } else {
     dispatch({
       type: "UPDATE_QUANTITY",
       payload: {
@@ -26,6 +29,7 @@ const Cart = () => {
         quantity: quantity,
       },
     });
+  }
   };
 
   let totalOrder = 0;
