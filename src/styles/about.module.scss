@@ -1,11 +1,15 @@
 .aboutUsTitle {
   color: #7d7d7d;
   padding-left: 1rem;
-  text-align: center;
+  text-align: left;
 }
 
-@media screen and (min-width: 480px) {
+.aboutUsContent {
+  height: 8rem;
+}
+
+@media screen and (max-width: 480px) {
   .aboutUsTitle {
-    text-align: left;
+    text-align: center;
   }
 }

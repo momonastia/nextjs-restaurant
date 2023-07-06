@@ -8,8 +8,8 @@
   align-items: center;
   justify-content: space-around;
   padding: 5px;
-  margin: 1rem;
-  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
   color: #7d7d7d;
 
   .imageOrderContainer {
@@ -38,20 +38,35 @@
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .pizzaOrderItem {
-    width: 90%;
+    width: 100%;
     font-size: 1rem;
-
+    margin-bottom: 0.5rem;
+        
     .imageOrderContainer {
-      margin: 14px;
+      margin: 0;
       width: auto;
       img {
-        scale: 100%;
+        width: 3rem;
+       
       }
     }
     .pizzaInfo {
-      width: 2rem;
+      width: max-content;
+      font-size: .7rem;
+    }
+
+    .cartQuantity {
+      display: flex;
+      width: 4rem;
+      font-size: .7rem;
+      justify-content: center;
+      align-items: center;
+    }
+    .cartBtn {
+      margin: 0.4rem;
+      width: 1.3rem;
     }
   }
 }

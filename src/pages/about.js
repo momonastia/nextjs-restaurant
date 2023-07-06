@@ -10,6 +10,7 @@ const AboutPage = () => {
       </Head>
       <div>
         <h1 className={styles.aboutUsTitle}>About us</h1>
+        <section className={styles.aboutUsContent}></section>
       </div>
     </>
   );

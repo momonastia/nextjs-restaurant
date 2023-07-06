@@ -23,3 +23,9 @@
   gap: 1rem;
   font-family: "Comforter", cursive;
 }
+
+@media screen and (max-width: 480px) {
+  .logo {
+    padding: 0;
+  }
+}

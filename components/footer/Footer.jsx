@@ -8,7 +8,7 @@ import styles from "./styles.module.scss";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className={styles.Footer}>
       <section className={styles.FooterMain}>
         <div className={styles.FooterContacts}>
           <div className={styles.logo}>
