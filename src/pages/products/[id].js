@@ -34,7 +34,7 @@ export const getStaticProps = async (context) => {
 };
 
 const Details = ({ pizza }) => {
-  console.log("details pizza >>>>", pizza);
+  /* console.log("details pizza >>>>", pizza); */
 
   return (
     <div className={styles.singlePizza}>

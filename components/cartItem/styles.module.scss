@@ -17,11 +17,11 @@
     height: fit-content;
     display: flex;
     justify-content: center;
-    width: 50px;
+    width: 4rem;
 
     img {
       border-radius: 5px;
-      scale: 70%;
+      width: 100%;
       object-fit: cover;
     }
   }

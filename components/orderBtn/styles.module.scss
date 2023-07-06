@@ -1,16 +1,17 @@
-.btn {
+.orderBtn {
   display: block;
   width: 100px;
+  height: 2.5rem;
   padding: 4px 0;
-  /* margin: 10px auto 40px; */
   background: #ffc600;
   border-radius: 8px;
   color: #121618;
   text-align: center;
   border: 1px solid #ffc600;
+  margin: 1rem;
 }
 
-.btn:hover {
+.orderBtn:hover {
   background: transparent;
   color: #ffc600;
   transition: all 0.5s;

@@ -17,7 +17,11 @@ const CartItem = ({ pizza, removeFromOrder, updateQuantity }) => {
       <div className={styles.pizzaInfo}>{pizza.name}</div>
 
       <div className={styles.cartQuantity}>
-       <button className={styles.cartBtn} onClick={()=> updateQuantity (pizza, pizza.count - 1)}>-</button>  
+       <button 
+        className={styles.cartBtn} 
+        onClick={()=> updateQuantity (pizza, pizza.count - 1)}
+        disabled={pizza.count <= 1}
+       >-</button>  
        <span>{pizza.count}</span>
        <button className={styles.cartBtn} onClick={()=> updateQuantity (pizza, pizza.count + 1)}>+</button>
       </div>

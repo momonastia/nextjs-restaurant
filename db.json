@@ -28,25 +28,25 @@
   "team": [
     {
       "name": "John Donne",
-      "image": "https://api.lorem.space/image/face?w=150&h=150&hash=225E6693",
+      "image": "/static/images/john.jpg",
       "role": "Chef",
       "id": "001"
     },
     {
       "name": "Steven Smith",
-      "image": "https://api.lorem.space/image/face?w=150&h=150&hash=500B67FB",
+      "image": "/static/images/steven.jpg",
       "role": "Pizzaiolo",
       "id": "002"
     },
     {
       "name": "Marta Loretti",
-      "image": "https://api.lorem.space/image/face?w=150&h=150&hash=4F32C4CF",
+      "image": "/static/images/marta.jpg",
       "role": "Pizzaiolo",
       "id": "003"
     },
     {
       "name": "Roberto Pignotti",
-      "image": "https://api.lorem.space/image/face?w=150&h=150&hash=2D297A22",
+      "image": "/static/images/roberto.jpg",
       "role": "Pizzaiolo",
       "id": "004"
     }
