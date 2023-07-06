@@ -1,3 +1,5 @@
+@import '_variables.scss';
+
 .title {
   position: relative;
   top: 3rem;
@@ -31,16 +33,16 @@
     width: 100px;
     padding: 4px 0;
     margin: 10px auto 40px;
-    background: #ffc600;
+    background: $primary-yellow;
     border-radius: 4px;
     color: #121618;
     text-align: center;
-    border: 1px solid #ffc600;
+    border: 1px solid $primary-yellow;
   }
 
   .btn:hover {
     background: #121618;
-    color: #ffc600;
+    color: $primary-yellow;
     transition: all 0.5s;
   }
 }

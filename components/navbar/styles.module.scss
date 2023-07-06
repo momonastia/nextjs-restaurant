@@ -1,3 +1,5 @@
+@import '../../src/styles/_variables.scss';
+
 .container {
   margin: 0 auto;
   padding: 0 10px;
@@ -67,6 +69,17 @@
     z-index: 10;
     color: #cbcbcb;
   }
+
+  .activeLink {
+    color: $primary-yellow;
+    text-shadow: 0 0 10px $primary-yellow;
+  }
+
+  a:hover {
+    color: $primary-yellow;
+    transition: all 0.5s;
+    text-shadow: 0 0 10px $primary-yellow;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -91,6 +104,4 @@
     }
   }
 }
-.activeLink {
-  color: #ffc600;
-}
+

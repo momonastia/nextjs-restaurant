@@ -1,19 +1,21 @@
+@import '../../src/styles/_variables.scss';
+
 .orderBtn {
   display: block;
   width: 100px;
   height: 2.5rem;
   padding: 4px 0;
-  background: #ffc600;
+  background: $primary-yellow;
   border-radius: 8px;
   color: #121618;
   text-align: center;
-  border: 1px solid #ffc600;
+  border: 1px solid $primary-yellow;
   margin: 1rem;
 }
 
 .orderBtn:hover {
   background: transparent;
-  color: #ffc600;
+  color: $primary-yellow;
   transition: all 0.5s;
   cursor: pointer;
   scale: 1.05;

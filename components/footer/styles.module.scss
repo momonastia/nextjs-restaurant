@@ -1,3 +1,5 @@
+@import '../../src/styles/_variables.scss';
+
 .FooterMain {
   display: flex;
   gap: 10px;
@@ -20,7 +22,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      color: #ffc600;
+      color: $primary-yellow;
       margin-right: 10px;
       gap: 1rem;
       font-family: "Comforter", cursive;
@@ -70,7 +72,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-   /*  gap: 0.8rem; */
     align-items: center;
     height: 150px;
 
@@ -79,10 +80,6 @@
       scale: 90%;
       height: fit-content;
       margin: 10px;
-
-      /*  img {
-        width: 100%;
-      } */
     }
   }
 }
@@ -93,20 +90,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffc600;
+  color: $primary-yellow;
   gap: 2rem;
 
   * {
-    border: 1px solid #ffc600;
+    border: 1px solid $primary-yellow;
     padding: 0.5rem;
     border-radius: 50%;
   }
 
   *:hover {
     cursor: pointer;
-    box-shadow: #ffc600;
-    -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 198, 0, 0.81);
-    box-shadow: 0px 0px 10px 5px rgba(255, 198, 0, 0.81);
+    box-shadow: $primary-yellow;
+    -webkit-box-shadow: 0px 0px 10px 5px rgba($primary-yellow, 0.81);
+    box-shadow: 0px 0px 10px 5px rgba($primary-yellow, 0.81);
     transition: all 0.5s;
   }
 }

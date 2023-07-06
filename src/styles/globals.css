@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Comforter&family=Montserrat:ital,wght@0,400;0,700;1,600&display=swap");
 
+:root {
+  --primary-yellow: #ffd746;
+  --secondary-color: #00ff00;
+}
+
+
 body {
   color: #2e2e2e;
   font-family: "Montserrat", sans-serif;
@@ -18,19 +24,14 @@ a {
   gap: 4px;
 }
 
-a:hover {
+/* a:active {
   color: #ffc600;
-  transition: all 0.5s;
-  /*  filter: drop-shadow(0px 0px 15px #ffc600); */
-}
+} */
 
-a:active {
+/* .activeLink {
   color: #ffc600;
-}
-
-.activeLink {
-  color: #ffc600;
-}
+  text-shadow: 0 0 5px #ffc600;
+} */
 
 .content {
   max-width: 1200px;
@@ -68,7 +69,7 @@ footer {
   text-align: center;
 }
 .not-found a {
-  color: #ffc600;
+  color:var(--primary-yellow);
   text-decoration: underline;
 }
 
