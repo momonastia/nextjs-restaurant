@@ -18,10 +18,20 @@ const Cart = () => {
     });
   };
 
+  const updateQuantity = (item, quantity) => {
+    dispatch({
+      type: "UPDATE_QUANTITY",
+      payload: {
+        id: item.id,
+        quantity: quantity,
+      },
+    });
+  };
+
   let totalOrder = 0;
-  context.state.orders.forEach((element) => {
-    totalOrder += Number.parseFloat(element.price);
-  });
+context.state.orders.forEach((element) => {
+  totalOrder += Number.parseFloat(element.price) * element.count;
+});
 
   return (
     <>
@@ -36,7 +46,7 @@ const Cart = () => {
           <div className={styles.cartList}>
             {context.state.orders.map((item) => (
               <div key={item.id}>
-                <CartItem pizza={item} removeFromOrder={removeFromOrder} />
+                <CartItem pizza={item} removeFromOrder={removeFromOrder} updateQuantity={updateQuantity} />
               </div>
             ))}
             <p className={styles.cartListTotal}>Total: {totalOrder} EUR </p>

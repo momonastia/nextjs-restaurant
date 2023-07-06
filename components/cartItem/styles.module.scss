@@ -28,6 +28,14 @@
   .pizzaInfo {
     width: 4rem;
   }
+
+  .cartBtn {
+    margin: .5rem;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #c1c1c1;
+    cursor: pointer;
+  }
 }
 
 @media screen and (min-width: 480px) {
