@@ -60,18 +60,19 @@ const Navbar = () => {
           </Link>
         </li>
         <li onClick={() => setNav(!nav)} className={styles.cartNavItem}>
-          <Link
-            href="/cart"
-            className={router.pathname == "/cart" ? styles.activeLink : ""}
-          >
-            <AiOutlineShoppingCart /> Cart
-            {context.state.orders.length > 0 && (
-              <div className={styles.cartNotEmptySign}>
-                {context.state.orders.length}
-              </div>
+          <Link 
+           href="/cart" 
+           className={router.pathname == "/cart" ? styles.activeLink : ""}
+           >
+           <AiOutlineShoppingCart /> Cart
+           {context.state.orders.length >  0 && (
+          <div className={styles.cartNotEmptySign}>
+            {context.state.orders.reduce((total, item) => total + item.count, 0)}
+          </div>
             )}
           </Link>
         </li>
+
       </ul>
       <div onClick={() => setNav(!nav)} className={styles.mobile_btn}>
         {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
