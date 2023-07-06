@@ -12,7 +12,12 @@ const Footer = () => {
       <section className={styles.FooterMain}>
         <div className={styles.FooterContacts}>
           <div className={styles.logo}>
-            <CiPizza /> Pizzeria
+          <Image
+          src="/static/images/logopizza.png"
+          alt="logo pizza colori neon"
+          width="180"
+          height="60"
+        ></Image>
           </div>
 
           <div className={styles.FooterAdress}>
