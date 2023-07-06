@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./styles.module.scss";
 import DeleteBtn from "components/deleteBtn/DeleteBtn";
 
-const CartItem = ({ pizza, removeFromOrder }) => {
+const CartItem = ({ pizza, removeFromOrder, updateQuantity }) => {
   return (
     <div className={styles.pizzaOrderItem}>
       <div className={styles.imageOrderContainer}>
@@ -16,8 +16,14 @@ const CartItem = ({ pizza, removeFromOrder }) => {
       </div>
       <div className={styles.pizzaInfo}>{pizza.name}</div>
 
-      <div>{pizza.count}</div>
-      <div>{pizza.price} euro </div>
+      <div>
+       <button className={styles.cartBtn} onClick={()=> updateQuantity (pizza, pizza.count - 1)}>-</button>  
+       <span>{pizza.count}</span>
+       <button className={styles.cartBtn} onClick={()=> updateQuantity (pizza, pizza.count + 1)}>+</button>
+      </div>
+
+      <div>{pizza.price * pizza.count} euro </div>
+
       <DeleteBtn removeFromOrder={removeFromOrder} pizza={pizza} />
     </div>
   );
