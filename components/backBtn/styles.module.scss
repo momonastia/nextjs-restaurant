@@ -1,0 +1,23 @@
+@import '../../src/styles/_variables.scss';
+
+.backBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  padding: 4px 0;
+  height: 2rem;
+  background: $primary-yellow;
+  border-radius: 8px;
+  color: #121618;
+  border: 1px solid $primary-yellow;
+ /*  margin: .2rem; */
+}
+
+.backBtn:hover {
+  background: transparent;
+  color: $primary-yellow;
+  transition: all 0.5s;
+  cursor: pointer;
+  scale: 1.05;
+}

@@ -22,7 +22,7 @@ export default function Home() {
         <motion.div
           initial={{ y: +50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ /* delay: 0.5, */ ease: "easeOut", duration: 1 }}
+          transition={{ ease: "easeOut", duration: 1 }}
           speed={0.1}
           className={`${styles.title}`}
         >

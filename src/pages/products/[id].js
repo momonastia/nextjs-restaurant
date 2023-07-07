@@ -1,4 +1,5 @@
 import styles from "@/styles/pizzas.module.scss";
+import BackBtn from "components/backBtn/BackBtn";
 import Image from "next/image";
 
 
@@ -52,7 +53,7 @@ const Details = ({ pizza }) => {
         </div>
         <div>{pizza.desc}</div>
       </div>
-      <div className={styles.orderInfo}></div>
+     <BackBtn />
     </div>
   );
 };
