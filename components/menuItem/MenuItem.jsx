@@ -10,7 +10,6 @@ const MenuItem = ({ pizza }) => {
           alt={`${pizza.name}`}
           width="250"
           height="150"
-          Layout="responsive"
         ></Image>
       </div>
       <div className={styles.pizzaInfo}>

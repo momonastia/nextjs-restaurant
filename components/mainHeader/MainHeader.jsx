@@ -8,7 +8,6 @@ const MainHeader = () => {
   return (
     <header>
       <div className={styles.logo}>
-        {/* <CiPizza /> Pizzeria */}
         <Image
           src="/static/images/logopizza.png"
           alt="logo pizza colori neon"

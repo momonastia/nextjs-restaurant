@@ -1,4 +1,3 @@
-import { CiPizza } from "react-icons/ci";
 import { GrFacebookOption } from "react-icons/gr";
 import { AiOutlineYoutube, AiOutlineInstagram } from "react-icons/ai";
 import { RiLinkedinFill } from "react-icons/ri";

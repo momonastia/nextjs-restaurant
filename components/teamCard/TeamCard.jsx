@@ -13,7 +13,6 @@ const TeamCard = forwardRef(({ member }, ref) => {
           alt={`${member.name}`}
           width="150"
           height="150"
-          Layout="responsive"
         ></Image>
       </div>
       <div className={styles.teamInfo}>

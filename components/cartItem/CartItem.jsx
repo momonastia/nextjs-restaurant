@@ -11,7 +11,6 @@ const CartItem = ({ pizza, removeFromOrder, updateQuantity }) => {
           alt={`${pizza.name}`}
           width="80"
           height="50"
-          Layout="responsive"
         ></Image>
       </div>
       <div className={styles.pizzaInfo}>{pizza.name}</div>
