@@ -31,7 +31,7 @@
  <img src='https://i.postimg.cc/cJ9jm6br/Schermata-2023-02-24-alle-14-46-09-removebg-preview.png'  style="height: 300px; padding: 20px 0;" />
   <img src='https://i.postimg.cc/B6qMF3gM/Schermata-2023-02-24-alle-14-45-58-removebg-preview.png'  style="height: 300px; padding: 20px 0;" /> 
 </div>
-</div>
+</div>-->
 
 <hr>
       
@@ -47,37 +47,37 @@
 </div>
 <hr>
 
-<div>
+<!-- <div>
 <h3 align="left">Design</h3>
  <p align="left">Il design dell'applicazione è stato realizzato completamente da zero per offrire un'esperienza utente unica partendo dalla creazione di un mock up su Figma. L'utilizzo di <span style='color: rgb(255, 0, 230);'> SASS</span> ha semplificato la scrittura del codice CSS. Sono stati utilizzati i <span style='color: rgb(255, 0, 230);'> moduli SCSS</span>, una tecnologia che consente di organizzare il codice CSS in file separati, semplificando la manutenzione e il debugging del codice.</p>  
  <div style="display: flex; flex-direction: row;
         align-items: center; justify-content: center; ">
 <img src='https://i.postimg.cc/3rL0YhDY/Schermata-2023-02-24-alle-15-05-29.png'  style="height: 500px; padding: 20px 0;" />
-</div>  
+</div>  -->
         
 <hr>
 
 <div>
-    <h3 align="left">Struttura</h3>
-  <p align="left">L'applicazione presenta una pagina di login per accedere all'account dell'utente e una homepage che mostra i migliori artisti, le migliori tracce e i migliori album del momento. Cliccando su ogni singolo elemento, si aprirà una pagina dinamica con le informazioni dettagliate e la possibilità di ascoltare la traccia audio. </p>
+    <h3 align="left">Here is an overview of the key pages and their functionalities</h3>
+  <p align="left">The Home Page showcases the advantages of the pizza restaurant, highlighting its unique features and offerings. It also introduces the team behind the scenes. The Menu Page presents a selection of pizzas available for order. Each pizza is displayed with an image, description, and price. Users can explore the menu, select their favorite pizzas, and add them to the cart. </p>
   <div style="display: flex; flex-direction: row;
         align-items: center; gap: 10px;  justify-content: center;">
-   <img src='https://i.postimg.cc/QdVc7t16/Schermata-2023-02-24-alle-14-46-53-removebg-preview.png'  style="height: 300px; padding: 20px 0;" />
-  <img src='https://i.postimg.cc/ZR2HMNmD/Schermata-2023-02-24-alle-14-47-04-removebg-preview.png'  style="height: 300px; padding: 20px 0;" />
+   <img src='https://i.postimg.cc/hhWWR9Bf/mobile-7.png'  style="height: 300px; padding: 20px 0;" />
+  <img src='https://i.postimg.cc/1t839cLH/mobile-6.png'  style="height: 300px; padding: 20px 0;" />
 </div> 
 </div>
 <div style='display: flex; flex-direction: column; align-items: flex-start;'>
-<p>Inoltre, il progetto include: </p>
+<p>Other pages: </p>
 <ul style="padding: 0px; text-align: left;">
-        <li> una pagina dedicata alla gestione delle canzoni preferite, dove gli utenti possono aggiungere e rimuovere le loro tracce</li>
-        <li> una pagina "shuffle" che suggerisce all'utente canzoni casuali</li>
-        <li> una pagina di ricerca che consente di cercare album o canzoni specifiche</li>
+        <li> Dynamic Pizza Pages </li>
+        <li> Reviews Page</li>
+        <li> About Page</li>
     </ul> 
   </div>
 </div>
  
 
    <hr>
-    </div> -->
+    </div> 
   </body>
 
