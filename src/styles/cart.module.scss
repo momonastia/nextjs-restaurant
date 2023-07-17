@@ -1,6 +1,9 @@
+@import '_variables.scss';
+
 .cartTitle {
   color: #7d7d7d;
-  text-align: center;
+  text-align: left;
+  padding-left: 1rem;
 }
 
 .emptyCartSection {
@@ -9,7 +12,7 @@
   justify-content: center;
   align-items: center;
   .cartIcon {
-    color: #ffc600;
+    color: $primary-yellow;
     font-size: 4rem;
   }
 
@@ -32,39 +35,71 @@
 
   .btn {
     display: block;
-    width: 100px;
+    width: 14rem;
     padding: 4px 0;
     margin: 10px auto 40px;
-    background: #ffc600;
+    background: $primary-yellow;
     border-radius: 4px;
     color: #121618;
     text-align: center;
-    border: 1px solid #ffc600;
+    border: 1px solid $primary-yellow;
   }
 
   .btn:hover {
     background: #121618;
-    color: #ffc600;
+    color: $primary-yellow;
     transition: all 0.5s;
   }
 }
 
-.cartListTotal {
-  text-align: center;
-  font-size: 1.4rem;
-  color: #7d7d7d;
+.cartTotalSection {
+  width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: center;
+   gap: 1rem;
+   margin-right: 3rem;
+
+  .cartListTotal {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #7d7d7d;
+  }
+
+  .cartTotalBtn {
+    width: 10rem;
+    height: 3rem;
+    padding: 4px 0;
+    margin: .8rem;
+    background: $primary-yellow;
+    border-radius: 10px;
+    color: #121618;
+    text-align: center;
+    border: 1px solid $primary-yellow;
+  }
+
+  .cartTotalBtn:hover {
+    background: #121618;
+    color: $primary-yellow;
+    transition: all 0.5s;
+  }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .cartTitle {
-    text-align: left;
-    padding-left: 1rem;
+    text-align: center;
   }
   .cartList {
-    padding-left: 1rem;
+    
     p {
       text-align: right;
       margin-right: 10rem;
     }
+  }
+
+  .cartTotalSection {
+    flex-direction: column;
+    align-items: center;
   }
 }

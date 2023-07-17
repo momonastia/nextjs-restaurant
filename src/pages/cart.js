@@ -49,14 +49,17 @@ context.state.orders.forEach((element) => {
                 <CartItem pizza={item} removeFromOrder={removeFromOrder} updateQuantity={updateQuantity} />
               </div>
             ))}
-            <p className={styles.cartListTotal}>Total: {totalOrder} EUR </p>
+            <div className={styles.cartTotalSection}>
+              <div className={styles.cartListTotal}>Total: {totalOrder} EUR </div>
+              <button className={styles.cartTotalBtn}>Order now</button>
+            </div> 
           </div>
         ) : (
           <div className={styles.emptyCartSection}>
             <AiOutlineShoppingCart className={styles.cartIcon} />
             <h2>You cart is empty</h2>
             <Link href="/products" className={styles.btn}>
-              Order now
+              Go for some pizza
             </Link>
           </div>
         )}
