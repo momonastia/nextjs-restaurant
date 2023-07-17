@@ -2,12 +2,82 @@
 <div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
       
 <div style="display: flex; gap: 10px;  flex-direction: column; align-items: center; justify-content: center;">
-  <h1  align="center" style="color: white;"> Pizzeria
-  
- <div>
-  <h3 align="left">Description</h3>
-    <p  align="left"> Online restaurant Web application (work in progress) </p>
-   <br>
-  
+  <h1  align="center" style="color: white;"> <strong>Toto's pizzeria</strong>
+  <p align="center"><img src="https://i.postimg.cc/D0BRWqrj/logopizza.webp" style="width: 150px;"></p></h1>  
 </div> 
+
+<div>
+  <h3 align="left">Description</h3>
+    <p  align="left"> Toto's pizzeria is a web application featuring various pages to provide a seamless pizza ordering experience for users. </p>
+</div>          
+<hr>
+
+<div>
+    <h3 align="left">Home in version mobile e desktop</h3>
+  <div style="display: flex; gap: 10px;  flex-direction: row;
+        align-items: center; justify-content: center;">
+<img src='https://i.postimg.cc/VN2Mj6Bz/mobile-4.png'  style="height: 300px; padding: 20px 0;" />
+  <img src='https://i.postimg.cc/DZ2hpQc6/mobile-5.png'  style="height: 300px; padding: 20px 0;" />
+</div>
+</div>      
+      
+<hr>
+      
+<div>
+   <!--  <h3 align="left">Routing</h3>
+  <p align="left">L'uso di <span style='color: rgb(255, 0, 230);'> Next.js</span> fornisce un'esperienza di navigazione fluida e veloce. Per garantire un caricamento rapido delle pagine e una migliore indicizzazione sui motori di ricerca, è stato utilizzato il <span style='color: rgb(255, 0, 230);'> server-side rendering</span>, che permette di generare le pagine HTML lato server prima di inviarle al client.  </p>
+  <div style="display: flex; gap: 10px; flex-direction: row;
+        align-items: center; justify-content: center;">
+ <img src='https://i.postimg.cc/cJ9jm6br/Schermata-2023-02-24-alle-14-46-09-removebg-preview.png'  style="height: 300px; padding: 20px 0;" />
+  <img src='https://i.postimg.cc/B6qMF3gM/Schermata-2023-02-24-alle-14-45-58-removebg-preview.png'  style="height: 300px; padding: 20px 0;" /> 
+</div>
+</div>
+
+<hr>
+      
+<div style="display: flex; flex-direction: column;  align-items: center;">
+<h3>Tecnologie</span> :</h3>
+<ul style="display: flex; flex-direction: row; gap:20px; align-items: center; justify-content: flex-start;">
+<img  style='width: 40px;' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="">
+<img  style='width: 40px;' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" alt="">
+<img  style='width: 40px;' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="">
+<img  style='width: 40px;' src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="">
+<img  style='width: 40px;' src="https://avatars.githubusercontent.com/u/6078720?s=200&v=4" alt="">
+</ul>
+</div>
+<hr>
+
+<div>
+<h3 align="left">Design</h3>
+ <p align="left">Il design dell'applicazione è stato realizzato completamente da zero per offrire un'esperienza utente unica partendo dalla creazione di un mock up su Figma. L'utilizzo di <span style='color: rgb(255, 0, 230);'> SASS</span> ha semplificato la scrittura del codice CSS. Sono stati utilizzati i <span style='color: rgb(255, 0, 230);'> moduli SCSS</span>, una tecnologia che consente di organizzare il codice CSS in file separati, semplificando la manutenzione e il debugging del codice.</p>  
+ <div style="display: flex; flex-direction: row;
+        align-items: center; justify-content: center; ">
+<img src='https://i.postimg.cc/3rL0YhDY/Schermata-2023-02-24-alle-15-05-29.png'  style="height: 500px; padding: 20px 0;" />
+</div>  
+        
+<hr>
+
+<div>
+    <h3 align="left">Struttura</h3>
+  <p align="left">L'applicazione presenta una pagina di login per accedere all'account dell'utente e una homepage che mostra i migliori artisti, le migliori tracce e i migliori album del momento. Cliccando su ogni singolo elemento, si aprirà una pagina dinamica con le informazioni dettagliate e la possibilità di ascoltare la traccia audio. </p>
+  <div style="display: flex; flex-direction: row;
+        align-items: center; gap: 10px;  justify-content: center;">
+   <img src='https://i.postimg.cc/QdVc7t16/Schermata-2023-02-24-alle-14-46-53-removebg-preview.png'  style="height: 300px; padding: 20px 0;" />
+  <img src='https://i.postimg.cc/ZR2HMNmD/Schermata-2023-02-24-alle-14-47-04-removebg-preview.png'  style="height: 300px; padding: 20px 0;" />
+</div> 
+</div>
+<div style='display: flex; flex-direction: column; align-items: flex-start;'>
+<p>Inoltre, il progetto include: </p>
+<ul style="padding: 0px; text-align: left;">
+        <li> una pagina dedicata alla gestione delle canzoni preferite, dove gli utenti possono aggiungere e rimuovere le loro tracce</li>
+        <li> una pagina "shuffle" che suggerisce all'utente canzoni casuali</li>
+        <li> una pagina di ricerca che consente di cercare album o canzoni specifiche</li>
+    </ul> 
+  </div>
+</div>
+ 
+
+   <hr>
+    </div> -->
+  </body>
 
